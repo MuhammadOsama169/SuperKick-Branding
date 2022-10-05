@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
-    background-color: #FF005C;
-    width: 100vw;
-    height: 70vh;
+export const MainContainer = styled.div` 
+background-color: #FF005C;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
 
 `;
 
@@ -15,14 +15,19 @@ export const LeftContainer = styled.div`
     display: flex;
     flex-direction: column ;
     flex: 50%;
-    padding: 50px;
+    padding: 10px;
     align-items: center;
+    @media (max-width: 700px) {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 `;
 
 export const RightContainer = styled.div`
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
     flex: 50%;
     padding: 10px; 
 `;
