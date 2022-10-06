@@ -105,3 +105,23 @@ export const BoxHeader = styled.div`
     ;
 
 `;
+export const Button = styled.div`
+    margin-top:50px;
+    margin-left:600px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3D6FFF;
+    border-radius: 63px;
+    font-size: 18px;
+    color: #FFCD3D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+        transform: scale(0.98);
+      }
+    
+`;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,TopContainer,BottomContainer,CardRight,MainHeader,CoverText,BoxHeader } from './Styles/Section2.styled'
+import { MainContainer,TopContainer,BottomContainer,CardRight,MainHeader,CoverText,BoxHeader,Button } from './Styles/Section2.styled'
 import Img1 from "../assets/images/Mask-group.png";
 import Img2 from "../assets/images/Group-4.png";
 import Img3 from "../assets/images/Group-7.png";
@@ -7,6 +7,7 @@ import Img3 from "../assets/images/Group-7.png";
 
 export default function Section2() {
   return (
+    <>
     <MainContainer>
         <TopContainer>
             <CardRight>
@@ -29,6 +30,9 @@ export default function Section2() {
                 <img src={Img3}alt="img" />
             </CardRight>   
         </BottomContainer>
+        <Button>TAKE A BRAND HEALTH QUIZ</Button>
     </MainContainer>
+    
+    </>
   )
 }
