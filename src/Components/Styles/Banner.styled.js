@@ -2,44 +2,58 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div` 
     display: flex;
-    justify-content: center;
-    align-items: center;
-        @media (max-width: 700px) {
-            display: flex;
-            flex-direction: column ;
-            
-        }
-
-`;
-export const Card = styled.div`
-    display: flex;
     margin-top:400px;
     width: 100vw;
     height: 300px;
     background: #1F1F1F;
-
+    @media (max-width: 700px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ;
+        width: auto;
+        height: 800px;
+        margin-top:1400px;
+    }
 `;
+
 export const LeftContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left:250px;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        width: auto;
+        height: auto;
+        margin-left:0px;
+    }
 
 `;
 export const RightContainer = styled.div`
-    width: 80vw;
+    width: 100vw;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column ;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        padding-top:10px;
+    }
 `;
 export const Logo = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 300px;
   height: auto;
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column ;
+    width: auto;
+    height: auto;
+}
 `;
 
 
@@ -57,9 +71,7 @@ export const BoxHeader = styled.div`
     @media (max-width: 700px) {
         margin-top: 50px;
         padding: 0px;
-
-    ;
-
+    }
 `;
 
 export const CoverText = styled.div`

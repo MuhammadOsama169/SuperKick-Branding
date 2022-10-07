@@ -19,24 +19,20 @@ function Navbar() {
     <>
         <NavbarContainer extendNavbar={extendNavbar}>
             <InnerContainer>
-                <LeftContainer>
-                    <Logo ><img src={LogoImg}alt="Logo" /></Logo>
-                </LeftContainer>
-                <RightContainer>
-                    <NavbarLinkContainer>
-                        <NavbarLink to="/"> WHO WE ARE </NavbarLink>
-                        <NavbarLink to="/products"> SERVICES </NavbarLink>
-                        <NavbarLink to="/contact"> RESOURCES </NavbarLink>
-                        <NavbarLink to="/about"> LETS TALK </NavbarLink>
-                        <HamburgerButton 
-                            onClick={() => {
-                                setExtendNavbar((curr) => !curr);
-                            }}>
-                            {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
-                        </HamburgerButton>
+                <Logo ><img src={LogoImg}alt="Logo" /></Logo>
+                <NavbarLinkContainer>
+                    <NavbarLink to="/"> WHO WE ARE </NavbarLink>
+                    <NavbarLink to="/products"> SERVICES </NavbarLink>
+                    <NavbarLink to="/contact"> RESOURCES </NavbarLink>
+                    <NavbarLink to="/about"> LETS TALK </NavbarLink>
+                    <HamburgerButton 
+                        onClick={() => {
+                            setExtendNavbar((curr) => !curr);
+                         }}>
+                        {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
+                    </HamburgerButton>
                     </NavbarLinkContainer>
                     <Button>TAKE A BRAND HEALTH QUIZ</Button>
-                </RightContainer>
             </InnerContainer>
 
             {extendNavbar && (<OuterContainer>

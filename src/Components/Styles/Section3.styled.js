@@ -8,6 +8,12 @@ export const MainContainer = styled.div`
     width: 100vw;
     height: 600px;
     background: #F0F0F0;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        width: 100vw;
+        height: 100vh;
+    }
 
 `;
 
@@ -41,12 +47,14 @@ export const Text = styled.div`
     line-height: 33px;
     text-transform: uppercase;
     color: #000000;
-    padding: 0px; 
+    padding: 20px; 
     @media (max-width: 700px) {
         margin-top: 50px;
         padding: 0px;
-
-    ;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
 
 `;
 

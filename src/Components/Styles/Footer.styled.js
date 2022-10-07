@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div`
     display: flex;
@@ -31,6 +32,7 @@ export const Logo = styled.div`
   height: auto;
 `;
 
+
 export const StyledFooter = styled.footer`
     display: flex;
     justify-content: center;
@@ -45,19 +47,25 @@ export const StyledFooter = styled.footer`
     list-style-type: none;
     padding: 50px;
     
+    
   }
 
   ul li {
     margin-bottom: 20px;
     text-transform: uppercase;
+    &:hover {
+      opacity: 0.9;
+      transform: scale(0.98);
+    }
     
   }
 
   p {
     text-align: right;
   }
-
+  
   @media (max-width: 700px) {
+    display: none;
     text-align: center;
     font-style: bold;
     font-weight: 500;
@@ -75,3 +83,29 @@ export const StyledFooter = styled.footer`
     }
   }
 `
+export const OuterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  @media (min-width: 700px) {
+    display: none;
+  }
+`;
+
+export const NavbarLinkExtended = styled(Link)`
+
+  color: white;
+  font-family: 'Bebas+Neue';
+  font-style: normal;
+  font-weight: 20;
+  font-size: 20px;
+  line-height: 24px;
+  color: #F5F5F5;
+  text-decoration: none;
+  padding: 5px;
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+`;

@@ -17,25 +17,16 @@ export const InnerContainer = styled.div`
     width: 100%;
     height: 80px;
     display: flex;
-`;
-export const LeftContainer = styled.div`
     display: flex;
+    justify-content: center;
     align-items: center;
-    padding-left: 50px;
-
 `;
+
 export const Logo = styled.div`
-  margin: 10px;
   max-width: 180px;
   height: auto;
 `;
-export const RightContainer = styled.div`
-    flex: 70%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5%;
-`;
+
 export const NavbarLinkContainer = styled.div`
   display: flex;
   justify-content: space-between ;
@@ -44,16 +35,19 @@ export const NavbarLinkContainer = styled.div`
 
 
 export const NavbarLink = styled(Link)`
-
-  color: white;
-  font-family: 'Bebas+Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
-  font-weight: 20;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
   color: #F5F5F5;
   text-decoration: none;
-  margin-left: 20px;
+  padding-left: 20px;
+  &:hover {
+    color:  #FFCD3D;
+    transform: scale(0.98);
+  }
   @media (max-width: 700px) {
     display: none;
   }
@@ -70,13 +64,15 @@ export const NavbarLinkExtended = styled(Link)`
   text-decoration: none;
   padding: 5px;
   &:hover {
-    opacity: 0.9;
+    color:  #FFCD3D;
     transform: scale(0.98);
-
   }
 `;
 
 export const Button = styled.div`
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    line-height: 33px;
     width: 250px;
     height: 40px;
     display: flex;
@@ -112,10 +108,6 @@ export const HamburgerButton = styled.button`
     display: none;
   }
 `;
-
-
-
-
 
 export const OuterContainer = styled.div`
   display: flex;

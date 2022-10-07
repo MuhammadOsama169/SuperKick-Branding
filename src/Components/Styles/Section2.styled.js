@@ -4,8 +4,13 @@ import styled from "styled-components";
 export const MainContainer = styled.div` 
     width: 100vw;
     height: 100vh;
-
-
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        width: 100vw;
+        height: 100vh;
+    }
+    
 `;
 
 export const CardRight = styled.div`
@@ -13,6 +18,13 @@ export const CardRight = styled.div`
     width: 400px;
     height: 400px;
     background-color: black;
+    &:hover {
+        opacity: 0.9;
+        transform: scale(0.98);
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;}
+    
 
 `;
 
@@ -40,9 +52,7 @@ export const BottomContainer = styled.div`
     align-items: center;
     @media (max-width: 700px) {
         display: flex;
-        flex-direction: column ;}
-    
-    
+        flex-direction: column ;}  
 `;
 
 export const CoverText = styled.div`
@@ -99,10 +109,29 @@ export const BoxHeader = styled.div`
     position: absolute;
     margin-top:300px;
     @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
+        margin-top: 300px;
+        padding: 0px;}
 
-    ;
+`;
+export const BoxHeader2 = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFCD3D;
+    background:black;
+    width:400px;
+    height:50px;
+    position: absolute;
+    margin-top:300px;
+    @media (max-width: 700px) {
+        margin-top: 300px;
+        padding: 0px;}
 
 `;
 export const Button = styled.div`

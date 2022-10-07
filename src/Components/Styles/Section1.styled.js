@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 
-export const MainContainer = styled.div` 
+export const MainContainer = styled.div`
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,7 @@ export const CoverText = styled.div`
 
 `;
 export const MainHeader = styled.div`
+
     display: flex;
     justify-content: center;
     align-items: center;
