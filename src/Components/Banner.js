@@ -11,7 +11,7 @@ export default function Banner() {
         </LeftContainer>
         <RightContainer>
             <BoxHeader>want to go your own way?</BoxHeader>
-            <CoverText>No problem. Learn about branding, messaging,<br></br> and more through our Brand Outlaw content.</CoverText>
+            <CoverText>No problem. Learn about branding, messaging, and more through our Brand Outlaw content.</CoverText>
             <Button><Logo ><img src={ButtonImg}alt="Logo" /></Logo> Check out Brand Outlaw</Button>
         </RightContainer>
     </MainContainer>

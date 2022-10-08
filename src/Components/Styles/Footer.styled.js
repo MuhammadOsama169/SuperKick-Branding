@@ -25,8 +25,6 @@ export const LeftContainer = styled.div`
         height: auto;}
 `;
 
-
-
 export const Logo = styled.div`
   max-width: 300px;
   height: auto;
@@ -46,8 +44,7 @@ export const StyledFooter = styled.footer`
   ul {
     list-style-type: none;
     padding: 50px;
-    
-    
+
   }
 
   ul li {
@@ -94,18 +91,18 @@ export const OuterContainer = styled.div`
 `;
 
 export const NavbarLinkExtended = styled(Link)`
-
-  color: white;
-  font-family: 'Bebas+Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
-  font-weight: 20;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 29px;
+  color: white;
   color: #F5F5F5;
   text-decoration: none;
   padding: 5px;
   &:hover {
-    opacity: 0.9;
+    color:  #FFCD3D;
     transform: scale(0.98);
   }
+
 `;

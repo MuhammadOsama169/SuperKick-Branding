@@ -14,19 +14,13 @@ export const MainContainer = styled.div`
 `;
 
 export const CardRight = styled.div`
-
     width: 400px;
     height: 400px;
     background-color: black;
     &:hover {
         opacity: 0.9;
-        transform: scale(0.98);
-    @media (max-width: 700px) {
-        display: flex;
-        flex-direction: column ;}
-    
-
-`;
+        transform: scale(0.98);}
+`
 
 export const TopContainer = styled.div`
     display: grid;
@@ -60,19 +54,19 @@ export const CoverText = styled.div`
     justify-content: center;
     align-items: center;
     font-family: 'Work Sans';
-    font-weight: 400;
+    font-weight: 200;
     font-size: 24px;
     line-height: 34px;
     color: #F5F5F5;
-    padding: 15px; 
+    padding: 5px; 
     @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
-        margin-right: 10px;
-        margin-left: 10px;
-
-    ;
-
+        margin: auto;
+        width: 95%;
+        font-size: 19.3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;}
 `;
 export const MainHeader = styled.div`
     display: flex;
@@ -84,13 +78,17 @@ export const MainHeader = styled.div`
     font-size: 29px;
     line-height: 33px;
     color: #FFCD3D;
-    padding: 15px; 
+    padding: 10px; 
     @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
-
-    ;
-
+        margin: auto;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 `;
 export const BoxHeader = styled.div`
     display: flex;
@@ -135,16 +133,19 @@ export const BoxHeader2 = styled.div`
 
 `;
 export const Button = styled.div`
-    margin-top:50px;
+    margin-top:100px;
     margin-left:600px;
     width: 300px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #3D6FFF;
     border-radius: 63px;
-    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;

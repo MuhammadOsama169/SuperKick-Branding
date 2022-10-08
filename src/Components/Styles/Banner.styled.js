@@ -4,7 +4,7 @@ export const MainContainer = styled.div`
     display: flex;
     margin-top:400px;
     width: 100vw;
-    height: 300px;
+    height: 330px;
     background: #1F1F1F;
     @media (max-width: 700px) {
         display: flex;
@@ -39,14 +39,12 @@ export const RightContainer = styled.div`
     align-items: center;
     flex-direction: column ;
     @media (max-width: 700px) {
-        display: flex;
-        flex-direction: column ;
         padding-top:10px;
     }
 `;
 export const Logo = styled.div`
   display: flex;
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
   @media (max-width: 700px) {
     display: flex;
@@ -84,14 +82,13 @@ export const CoverText = styled.div`
     line-height: 34px;
     color: #F5F5F5;
     padding-top: 10px;
+    margin-right: 250px;
+    margin-left: 250px;
     @media (max-width: 700px) {
         margin-top: 50px;
         padding: 0px;
         margin-right: 10px;
-        margin-left: 10px;
-
-    ;
-
+        margin-left: 30px;}
 `;
 
 export const Button = styled.div`
@@ -109,6 +106,13 @@ export const Button = styled.div`
     color: #FF005C;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    @media (max-width: 700px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 60px;
+    }
     &:hover {
         opacity: 0.9;
         transform: scale(0.98);

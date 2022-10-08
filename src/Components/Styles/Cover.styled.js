@@ -35,13 +35,12 @@ export const CoverText = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Work Sans';
-    font-style: medium;
-    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    font-style: regular;
+    font-weight: 200;
     font-size: 28px;
     line-height: 33px;
     color: #F5F5F5;
-
 `;
 
 export const Button = styled.div`
@@ -53,7 +52,10 @@ export const Button = styled.div`
     align-items: center;
     background: #3D6FFF;
     border-radius: 63px;
-    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;

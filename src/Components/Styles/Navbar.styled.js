@@ -53,16 +53,14 @@ export const NavbarLink = styled(Link)`
   }
 `;
 export const NavbarLinkExtended = styled(Link)`
-
-  color: white;
-  font-family: 'Bebas+Neue';
+  font-family: 'Bebas Neue', sans-serif;
   font-style: normal;
-  font-weight: 20;
-  font-size: 20px;
-  line-height: 24px;
-  color: #F5F5F5;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
   text-decoration: none;
-  padding: 5px;
+  padding-top: 20px;
   &:hover {
     color:  #FFCD3D;
     transform: scale(0.98);
@@ -83,8 +81,6 @@ export const Button = styled.div`
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-
-  
   @media (max-width: 700px) {
     display: none;
   }

@@ -12,8 +12,12 @@ export default function Footer() {
         <OuterContainer>
             <NavbarLinkExtended to="/"> WHO WE ARE </NavbarLinkExtended>
             <NavbarLinkExtended to="/products"> SERVICES </NavbarLinkExtended>
-            <NavbarLinkExtended to="/contact"> RESOURCES </NavbarLinkExtended>
-            <NavbarLinkExtended to="/about"> LETS TALK </NavbarLinkExtended> 
+            <NavbarLinkExtended to="/contact"> linkedin </NavbarLinkExtended>
+            <NavbarLinkExtended to="/about"> LETS TALK </NavbarLinkExtended>
+            <NavbarLinkExtended to="/"> Videos </NavbarLinkExtended>
+            <NavbarLinkExtended to="/products"> Podcast </NavbarLinkExtended>
+            <NavbarLinkExtended to="/contact"> blog </NavbarLinkExtended>
+            <NavbarLinkExtended to="/about"> bookshop </NavbarLinkExtended> 
         </OuterContainer>
         <StyledFooter>
             <ul>

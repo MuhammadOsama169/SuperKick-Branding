@@ -12,7 +12,7 @@ export default function Section2() {
         <TopContainer>
             <CardRight>
                 <MainHeader>Why should people choose you over competitors?</MainHeader>
-                <CoverText>If potential customers can’t answer that question, your business can’t grow. We’ll help you define your differentiation point. Then we’ll develop brand messaging to clearly communicate that to potential customers. Click on a service to learn more. 
+                <CoverText>If potential customers can’t answer that question, your business can’t grow.<br></br> We’ll help you define your differentiation point. Then we’ll develop brand messaging to clearly communicate that to potential customers.<br></br> Click on a service to learn more. 
                 </CoverText>
             </CardRight>  
             <CardRight>
@@ -28,7 +28,7 @@ export default function Section2() {
             <CardRight>
                 <BoxHeader2>monthly strategy sessions</BoxHeader2>
                 <img src={Img3}alt="img" />
-            </CardRight>   
+            </CardRight>
         </BottomContainer>
         <Button>TAKE A BRAND HEALTH QUIZ</Button>
     </MainContainer>

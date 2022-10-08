@@ -67,7 +67,10 @@ export const Button = styled.div`
     align-items: center;
     background: #3D6FFF;
     border-radius: 63px;
-    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
