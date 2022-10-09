@@ -11,13 +11,13 @@ export default function Footer() {
         </LeftContainer>
         <OuterContainer>
             <NavbarLinkExtended to="/"> WHO WE ARE </NavbarLinkExtended>
-            <NavbarLinkExtended to="/products"> SERVICES </NavbarLinkExtended>
-            <NavbarLinkExtended to="/contact"> linkedin </NavbarLinkExtended>
-            <NavbarLinkExtended to="/about"> LETS TALK </NavbarLinkExtended>
-            <NavbarLinkExtended to="/"> Videos </NavbarLinkExtended>
-            <NavbarLinkExtended to="/products"> Podcast </NavbarLinkExtended>
-            <NavbarLinkExtended to="/contact"> blog </NavbarLinkExtended>
-            <NavbarLinkExtended to="/about"> bookshop </NavbarLinkExtended> 
+            <NavbarLinkExtended to="/SERVICES"> SERVICES </NavbarLinkExtended>
+            <NavbarLinkExtended to="/linkedin"> linkedin </NavbarLinkExtended>
+            <NavbarLinkExtended to="/LETS TALK"> LETS TALK </NavbarLinkExtended>
+            <NavbarLinkExtended to="/Videos"> Videos </NavbarLinkExtended>
+            <NavbarLinkExtended to="/Podcast"> Podcast </NavbarLinkExtended>
+            <NavbarLinkExtended to="/blog"> blog </NavbarLinkExtended>
+            <NavbarLinkExtended to="/bookshop"> bookshop </NavbarLinkExtended> 
         </OuterContainer>
         <StyledFooter>
             <ul>

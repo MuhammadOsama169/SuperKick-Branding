@@ -44,7 +44,7 @@ export const RightContainer = styled.div`
 `;
 export const Logo = styled.div`
   display: flex;
-  max-width: 450px;
+  max-width: 350px;
   height: auto;
   @media (max-width: 700px) {
     display: flex;
@@ -92,6 +92,10 @@ export const CoverText = styled.div`
 `;
 
 export const Button = styled.div`
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
     margin-top:50px;
     width: 400px;
     height: 60px;

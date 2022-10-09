@@ -7,6 +7,7 @@ import GlobalStyles from './Components/Styles/Global'
 import Banner from './Components/Banner';
 import Section3 from './Components/Section3';
 import Footer from './Components/Footer';
+import SecondPage from './Components/SecondPage';
 
 
 
@@ -14,14 +15,15 @@ function App() {
   return (
     <Router>
       <>
-      <GlobalStyles />
+      {/* <GlobalStyles />
       <Navbar />
       <Cover/>
       <Section1/>
       <Section2/>
       <Banner/>
       <Section3/>
-      <Footer/>
+      <Footer/> */}
+      <SecondPage/>
       </>
       <Routes>
         <Route path="/" />
