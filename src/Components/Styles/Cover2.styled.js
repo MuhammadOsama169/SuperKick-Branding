@@ -40,21 +40,21 @@ export const BottomContainer = styled.div`
     
 `;
 export const LeftContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    flex:50%;
-    margin-top:30px;
+    width: 50vw;
+    height: 168px;
+    background: #1F1F1F;
     @media (max-width: 700px) {
-        flex:100%;
-        margin-top:0px;
+        width: 100vw;
+        height: 80vh;
     }
 `;
 export const RightContainer = styled.div`
-    display: flex;
-    flex:50%;
+    width: 50vw;
+    height: 168px;
+    background: #1F1F1F;
     @media (max-width: 700px) {
-        flex:100%;
-        margin:0px;
+        width: 100vw;
+        height: 40vh;
     }
 `;
  
@@ -71,8 +71,9 @@ export const CoverText = styled.div`
     line-height: 33px;
     color: #F5F5F5;
     @media (max-width: 700px) {
-        margin-top:0px;
+        padding:50px;
         margin-left:0px;
+        margin-right:0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,10 +90,16 @@ export const CoverText2 = styled.div`
     font-size: 24px;
     line-height: 28px;
     color: #F5F5F5;
+    padding-top:17px;
     margin-left:120px;
     margin-right:200px;
     @media (max-width: 700px) {
-        margin:0px;
+        padding:50px;
+        margin-left:0px;
+        margin-right:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
 `;
@@ -107,9 +114,14 @@ export const CoverText3 = styled.div`
     line-height: 28px;
     color: #F5F5F5;
     margin-right:250px;
+    padding-top:17px;
     @media (max-width: 700px) {
-        margin:0px;
-        padding:0px;
+        padding:50px;
+        margin-left:0px;
+        margin-right:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
@@ -145,9 +157,26 @@ export const HeaderText2 = styled.div`
     margin-left:120px;
     margin-top:20px;
     @media (max-width: 700px) {
-        margin:0px;
+        margin-top:100px;
+        padding:50px;
+        font-size: 55px;
+        margin-left:0px;
+        margin-right:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 `;
+export const Container = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;}
+    }
+`;
+
+
 
 
