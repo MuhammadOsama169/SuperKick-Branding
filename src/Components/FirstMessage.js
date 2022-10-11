@@ -1,6 +1,6 @@
 import React from 'react'
-import { LeftContainer, MainContainer, RightContainer,CoverText,MainHeader,ImageContainer,PinkFrame,Button } from './Styles/FirstMessage.styled'
-import ImgCover from "../assets/images/superkick-team 1.png";
+import { LeftContainer, MainContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from './Styles/FirstMessage.styled'
+
 
 export default function Section1() {
   return (
@@ -25,8 +25,7 @@ export default function Section1() {
             </CoverText>
         </LeftContainer>
         <RightContainer>
-            <ImageContainer><img src={ImgCover}alt="img" /></ImageContainer>
-            <PinkFrame></PinkFrame>
+            <ImageContainer></ImageContainer>
             <Button>I’m interested in this service</Button>
         </RightContainer>
     </MainContainer>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import img from "../../assets/images/superkick-team 1.png";
 
 export const MainContainer = styled.div`
     display: grid;
@@ -88,19 +89,19 @@ export const Section = styled.div`
 
 `;
 
-export const PinkFrame=styled.div`
-    position: absolute;
-    width: 478px;
-    height: 318px;
-    left: 825px;
-    top: 797px;
-
-    background: #FF005C;
-`
+// export const PinkFrame=styled.div`
+//     position: absolute;
+//     width: 478px;
+//     height: 318px;
+//     left: 825px;
+//     top: 797px;
+//     background: #FF005C;
+// `
 export const ImageContainer=styled.div`
     position: relative;
     width: 478px;
     height: 318px;
+    background-image: url(${img});
 `
 export const Button = styled.div`
     margin-top:100px;

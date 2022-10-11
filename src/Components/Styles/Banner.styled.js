@@ -2,8 +2,10 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div` 
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top:400px;
-    width: 100vw;
+    width: 100%;
     height: 330px;
     background: #1F1F1F;
     @media (max-width: 700px) {
@@ -21,7 +23,6 @@ export const LeftContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left:250px;
     @media (max-width: 700px) {
         display: flex;
         flex-direction: column ;
@@ -44,8 +45,9 @@ export const RightContainer = styled.div`
 `;
 export const Logo = styled.div`
   display: flex;
-  max-width: 350px;
+  max-width: 450px;
   height: auto;
+  margin-left:103px;
   @media (max-width: 700px) {
     display: flex;
     flex-direction: column ;
@@ -56,14 +58,11 @@ export const Logo = styled.div`
 
 
 export const BoxHeader = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Work Sans';
+    font-family: 'Bebas Neue', cursive;
     font-style: normal;
-    font-weight: 700;
-    font-size: 29px;
-    line-height: 44px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
     text-transform: uppercase;
     color: #FFCD3D;
     @media (max-width: 700px) {
@@ -74,16 +73,13 @@ export const BoxHeader = styled.div`
 
 export const CoverText = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Work Sans';
     font-weight: 400;
     font-size: 24px;
     line-height: 34px;
     color: #F5F5F5;
     padding-top: 10px;
-    margin-right: 250px;
-    margin-left: 250px;
+    margin-right:125px;
     @media (max-width: 700px) {
         margin-top: 50px;
         padding: 0px;
@@ -122,4 +118,16 @@ export const Button = styled.div`
         transform: scale(0.98);
       }
     
+`;
+export const InnerContainer = styled.div`
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        padding-left:0px;
+        padding-right:0px;
+    }
 `;

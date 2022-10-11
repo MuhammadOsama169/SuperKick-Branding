@@ -3,32 +3,73 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     display: flex;
-        @media (max-width: 700px) {
-            display: flex;
-            flex-direction: column ;
-        }
+    justify-content: center;
+    align-items: center;
+    flex-direction: row ;
+    width:100%;
+    height:100vh;
+
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column ;
+        height:100vh;
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column ;
+        height:100vh;
+    }
+    @media (max-width: 801px) {
+        display: flex;
+        flex-direction: column ;
+        height:100vh;
+    }
+`;
+export const InnerContainer = styled.div`
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row ;
+    padding-left:110px;
+    padding-right:99px;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ;
+        padding-left:0px;
+        padding-right:0px;
+    }
 `;
 
 export const LeftContainer = styled.div`
     display: flex;
-    justify-content: center;
     flex-direction: column ;
-    flex: 60%;
-    align-items: flex-start;
-    padding-left:190px;
-    padding-right:120px;
+    margin-right:150px;
+    @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column ; 
+        margin-right:0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+`;
+
+
+export const RightContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:auto;
     @media (max-width: 700px) {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left:10px;
-        padding-right:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-`;
-
-export const RightContainer = styled.div`
-    flex: 40%;
-    padding: 10px; 
 `;
 
 export const CoverText = styled.div`
@@ -45,20 +86,19 @@ export const CoverText = styled.div`
 
 `;
 export const MainHeader = styled.div`
-
     display: flex;
-    justify-content: center;
+    font-family: 'Bebas Neue', cursive;
     align-items: flex-start;
-    font-family: 'Work Sans';
-    font-style: bold;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 33px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 64px;
     color: #FF005C;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
     @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;}
+        margin-top: 150px;
+        padding-bottom: 0px;
+    }
 
 `;
 

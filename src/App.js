@@ -15,15 +15,15 @@ function App() {
   return (
     <Router>
       <>
-      {/* <GlobalStyles />
+      <GlobalStyles />
       <Navbar />
       <Cover/>
       <Section1/>
       <Section2/>
       <Banner/>
-      <Section3/>
+      {/* <Section3/>
       <Footer/> */}
-      <SecondPage/>
+      {/* <SecondPage/> */}
       </>
       <Routes>
         <Route path="/" />

@@ -1,35 +1,49 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div` 
-background-color: #FF005C;
+    background-color: #FF005C;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row ;
+    width:100%;
+
+
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column ;
+    }
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column ;
+    }
+    @media (max-width: 801px) {
+        display: flex;
+        flex-direction: column ;
+    }
+    
+`;
+
+export const InnerContainer = styled.div`
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row ;
     @media (max-width: 700px) {
         display: flex;
         flex-direction: column ;
-
 `;
-
 export const LeftContainer = styled.div`
     display: flex;
     flex-direction: column ;
-    flex: 50%;
-    padding: 10px;
     align-items: center;
-    @media (max-width: 700px) {
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
+    justify-content: center;
 `;
 
 export const RightContainer = styled.div`
-    flex: 50%;
-    padding: 10px; 
+
 `;
 export const CoverText = styled.div`
     display: flex;
@@ -41,6 +55,12 @@ export const CoverText = styled.div`
     font-size: 28px;
     line-height: 33px;
     color: #F5F5F5;
+    @media (max-width: 700px) {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Button = styled.div`
@@ -62,6 +82,14 @@ export const Button = styled.div`
     &:hover {
         opacity: 0.9;
         transform: scale(0.98);
-      }
+    }
+    @media (max-width: 700px) {
+        margin-top:20px;
+        margin-bottom:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
     
 `;

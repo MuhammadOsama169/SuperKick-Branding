@@ -25,6 +25,11 @@ export const InnerContainer = styled.div`
 export const Logo = styled.div`
   max-width: 180px;
   height: auto;
+  cursor: pointer;
+  @media (min-width: 700px) {
+    max-width: auto;
+    margin-left:0px;
+  }
 `;
 
 export const NavbarLinkContainer = styled.div`
@@ -35,7 +40,7 @@ export const NavbarLinkContainer = styled.div`
 
 
 export const NavbarLink = styled(Link)`
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -53,7 +58,7 @@ export const NavbarLink = styled(Link)`
   }
 `;
 export const NavbarLinkExtended = styled(Link)`
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
