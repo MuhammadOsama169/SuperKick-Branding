@@ -8,6 +8,7 @@ import Banner from './Components/Banner';
 import Section3 from './Components/Section3';
 import Footer from './Components/Footer';
 import SecondPage from './Components/SecondPage';
+import SectionBreak from './Components/SectionBreak';
 
 
 
@@ -19,10 +20,11 @@ function App() {
       <Navbar />
       <Cover/>
       <Section1/>
+      <SectionBreak></SectionBreak>
       <Section2/>
       <Banner/>
-      {/* <Section3/>
-      <Footer/> */}
+      {/* <Section3/> */}
+      {/* <Footer/> */}
       {/* <SecondPage/> */}
       </>
       <Routes>

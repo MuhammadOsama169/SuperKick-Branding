@@ -1,6 +1,5 @@
 import React from 'react'
-import { MainContainer,TopContainer,BottomContainer,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer } from './Styles/Section2.styled'
-import Img1 from "../assets/images/Mask-group.png";
+import { MainContainer,TopContainer,ImageContainer2,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer,InnerContainer,ImageContainer,ImageContainer3 } from './Styles/Section2.styled'
 import Img2 from "../assets/images/Group-4.png";
 import Img3 from "../assets/images/Group-7.png";
 
@@ -10,27 +9,27 @@ export default function Section2() {
     <>
     <MainContainer>
         <TopContainer>
-            <CardRight>
-                <MainHeader>Why should people choose you over competitors?</MainHeader>
-                <CoverText>If potential customers can’t answer that question, your business can’t grow.</CoverText>
-                <CoverText>We’ll help you define your differentiation point. Then we’ll develop brand messaging to clearly communicate that to potential customers.</CoverText>
-                <CoverText>Click on a service to learn more.</CoverText>
-            </CardRight>  
-            <CardRight>
+            <InnerContainer>
+                <CardRight>
+                    <MainHeader>Why should people choose you over competitors?</MainHeader>
+                    <CoverText>If potential customers can’t answer that question, your business can’t grow.</CoverText>
+                    <CoverText>We’ll help you define your differentiation point. Then we’ll develop brand messaging to clearly communicate that to potential customers.</CoverText>
+                    <CoverText>Click on a service to learn more.</CoverText>
+                </CardRight>
+            </InnerContainer>
+            <InnerContainer>
                 <BoxHeader>brand diagnostic</BoxHeader>
-                <img src={Img1}alt="img" />
-            </CardRight>   
-        </TopContainer>
-        <BottomContainer>
-            <CardRight>
+                <ImageContainer></ImageContainer>
+            </InnerContainer> 
+            <InnerContainer>
                 <BoxHeader>messaging Workshop</BoxHeader>
-                <img src={Img2}alt="img" />
-            </CardRight>  
-            <CardRight>
+                <ImageContainer2></ImageContainer2>
+            </InnerContainer>
+            <InnerContainer>
                 <BoxHeader2>monthly strategy sessions</BoxHeader2>
-                <img src={Img3}alt="img" />
-            </CardRight>
-        </BottomContainer>
+                <ImageContainer3></ImageContainer3>
+            </InnerContainer>
+        </TopContainer>
         <EndContainer>
             <Button>TAKE A BRAND HEALTH QUIZ</Button>
         </EndContainer>

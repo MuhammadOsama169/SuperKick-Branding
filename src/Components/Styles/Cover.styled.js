@@ -8,21 +8,11 @@ export const MainContainer = styled.div`
     flex-direction: row ;
     width:100%;
 
-
-    @media (max-width: 320px) {
+    @media screen and (max-width:700px) {
         display: flex;
         flex-direction: column ;
     }
 
-    @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column ;
-    }
-    @media (max-width: 801px) {
-        display: flex;
-        flex-direction: column ;
-    }
-    
 `;
 
 export const InnerContainer = styled.div`
@@ -31,7 +21,7 @@ export const InnerContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: row ;
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         display: flex;
         flex-direction: column ;
 `;
@@ -55,8 +45,9 @@ export const CoverText = styled.div`
     font-size: 28px;
     line-height: 33px;
     color: #F5F5F5;
-    @media (max-width: 700px) {
-        font-size: 24px;
+    @media screen and (max-width: 900px) {
+        margin-top:20px;
+        font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,7 +74,7 @@ export const Button = styled.div`
         opacity: 0.9;
         transform: scale(0.98);
     }
-    @media (max-width: 700px) {
+    @media screen and (max-width: 700px) {
         margin-top:20px;
         margin-bottom:20px;
         display: flex;

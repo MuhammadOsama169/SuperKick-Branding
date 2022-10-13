@@ -1,61 +1,64 @@
 import styled from "styled-components";
+import Img1 from "../../assets/images/Mascot02.png";
+import Img2 from "../../assets/images/Lockup_Black.png";
+
 
 export const MainContainer = styled.div` 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:400px;
     width: 100%;
-    height: 330px;
+    margin:auto;
+    height: auto;
     background: #1F1F1F;
-    @media (max-width: 700px) {
+    @media screen and (max-width: 900px) {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column ;
-        width: auto;
-        height: 800px;
-        margin-top:1400px;
     }
 `;
 
-export const LeftContainer = styled.div`
+export const ImageContainer = styled.div`
+    background-image: url(${Img1});
+    background-size:contain;
+    width: 317px;
+    height: 307px;
+    background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 700px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media screen and (max-width: 900px) {
+        width: 200px;
+        height: 200px;
         display: flex;
         flex-direction: column ;
-        width: auto;
-        height: auto;
-        margin-left:0px;
+        justify-content: center;
+        align-items: center;
     }
-
+`;
+export const LogoImageContainer = styled.div`
+    background-image: url(${Img2});
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 81px;
+    height: 81px;
+    @media screen and (max-width: 900px) {
+        width: 71px;
+        height: 71px;
+    }
 `;
 export const RightContainer = styled.div`
-    width: 100vw;
-    height: auto;
     display: flex;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
-    flex-direction: column ;
-    @media (max-width: 700px) {
-        padding-top:10px;
+    margin:auto;
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        padding:5%;
     }
 `;
-export const Logo = styled.div`
-  display: flex;
-  max-width: 450px;
-  height: auto;
-  margin-left:103px;
-  @media (max-width: 700px) {
-    display: flex;
-    flex-direction: column ;
-    width: auto;
-    height: auto;
-}
-`;
-
 
 export const BoxHeader = styled.div`
     font-family: 'Bebas Neue', cursive;
@@ -65,26 +68,49 @@ export const BoxHeader = styled.div`
     line-height: 77px;
     text-transform: uppercase;
     color: #FFCD3D;
+
     @media (max-width: 700px) {
         margin-top: 50px;
+        padding: 0px;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 54px;
+        margin-top: 2%;
+        padding: 0px;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 44px;
+        margin-top: 2%;
+        padding: 0px;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 34px;
+        margin-top: 2%;
         padding: 0px;
     }
 `;
 
 export const CoverText = styled.div`
-    display: flex;
-    font-family: 'Work Sans';
-    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
     font-size: 24px;
-    line-height: 34px;
+    font-style: regular;
+    font-weight: 200;
+    line-height: 28.15px;
     color: #F5F5F5;
-    padding-top: 10px;
-    margin-right:125px;
-    @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
-        margin-right: 10px;
-        margin-left: 30px;}
+    padding-top:5%;
+
+    @media screen and (max-width: 900px) {
+        font-size: 20px;
+        font-style: regular;
+        font-weight: 200;
+        line-height: 28.15px;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 `;
 
 export const Button = styled.div`
@@ -106,11 +132,19 @@ export const Button = styled.div`
     color: #FF005C;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-    @media (max-width: 700px) {
+
+    @media screen and (max-width: 900px) {
+        font-size: 15px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 400px;
+        width: 300px;
+        height: 60px;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        width: 300px;
         height: 60px;
     }
     &:hover {
@@ -120,14 +154,19 @@ export const Button = styled.div`
     
 `;
 export const InnerContainer = styled.div`
-    margin:auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 700px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 10px;
+    margin-left:12%;
+    margin-right:12%;
+
+    @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
-        padding-left:0px;
-        padding-right:0px;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2,350px) ;
+        grid-template-rows: repeat(2, 350px);   
     }
 `;

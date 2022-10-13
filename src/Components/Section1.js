@@ -1,5 +1,5 @@
 import React from 'react'
-import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader,Section } from './Styles/Section1.styled'
+import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader } from './Styles/Section1.styled'
 import ImgCover from "../assets/images/women-walking.png";
 
 export default function Section1() {
@@ -17,9 +17,8 @@ export default function Section1() {
               <img src={ImgCover}alt="img" />
           </RightContainer>
       </InnerContainer>
-        
+
     </MainContainer>
-    <Section>HOW WE GET YOU THERE</Section>
     </>
   )
 }

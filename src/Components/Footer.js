@@ -1,7 +1,7 @@
 import React from 'react'
 import { LeftContainer,MainContainer, StyledFooter,NavbarLinkExtended, OuterContainer} from './Styles/Footer.styled'
 import LogoImg from "../assets/images/Logo-black.png";
-import { Logo } from './Styles/Banner.styled';
+import { Logo } from './Styles/Footer.styled';
 
 export default function Footer() {
   return (

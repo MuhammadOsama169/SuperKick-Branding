@@ -2,54 +2,53 @@ import styled from "styled-components";
 
 
 export const MainContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row ;
     width:100%;
-    height:100vh;
-
-    @media (max-width: 320px) {
+    height:90vh;
+    align-items: center;
+    @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
         height:100vh;
     }
 
-    @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column ;
-        height:100vh;
-    }
-    @media (max-width: 801px) {
-        display: flex;
-        flex-direction: column ;
-        height:100vh;
-    }
 `;
 export const InnerContainer = styled.div`
     margin:auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row ;
-    padding-left:110px;
-    padding-right:99px;
-    @media (max-width: 700px) {
+    max-width:1024px;
+    padding-top:5%;
+    padding-bottom:5%;
+    @media screen and (max-width: 900px) {
+        padding-top:0.1%;
+        padding-bottom:0.1%;
         display: flex;
         flex-direction: column ;
         padding-left:0px;
         padding-right:0px;
     }
 `;
+export const OuterContainer = styled.div`
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFCD3D;
+    background-color:black;
+    padding: 50px;
+    width:100%;
+    height:auto;
+`;
 
 export const LeftContainer = styled.div`
     display: flex;
     flex-direction: column ;
     margin-right:150px;
-    @media (max-width: 700px) {
+    @media screen and  (max-width: 900px) {
         display: flex;
         flex-direction: column ; 
-        margin-right:0px;
+        margin:0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -60,15 +59,16 @@ export const LeftContainer = styled.div`
 export const RightContainer = styled.div`
     display: flex;
     justify-content: center;
-    width:100%;
+    width:200%;
     height:auto;
-    @media (max-width: 700px) {
+    
+    @media screen and (max-width: 900px) {
         display: flex;
         justify-content: center;
         align-items: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column ; 
+        width:100%;
+        height:auto;
     }
 `;
 
@@ -79,9 +79,21 @@ export const CoverText = styled.div`
     font-weight: 400;
     line-height: 28.15px;
     color: black;
-    @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
+    @media screen and (max-width: 900px) {
+        padding: 10px;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ; 
+    ;
+    @media screen and (max-width: 500px) {
+        padding: 10px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ; 
     ;
 
 `;
@@ -95,10 +107,22 @@ export const MainHeader = styled.div`
     line-height: 64px;
     color: #FF005C;
     padding-bottom: 20px;
-    @media (max-width: 700px) {
-        margin-top: 150px;
-        padding-bottom: 0px;
-    }
+    @media screen and (max-width: 900px) {
+        padding: 10px;
+        font-size: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ; 
+    ;
+    @media screen and (max-width: 500px) {
+        padding: 10px;
+        font-size: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column ; 
+    ;
 
 `;
 
@@ -106,19 +130,19 @@ export const Section = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100px;
     font-family: 'Work Sans';
     font-style: bold;
     font-weight: 700;
     font-size: 45px;
     line-height: 33px;
-    color: #FFCD3D;
-    background-color:black;
-    padding: 50px; 
-    @media (max-width: 700px) {
-        margin-top: 50px;
-        padding: 0px;
+    @media (max-width: 900px) {
         font-size: 30px;
-        height:100px;}
+    } 
+    @media screen and (max-width: 500px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 400px) {
+        font-size: 20px;
+    }
 
 `;
