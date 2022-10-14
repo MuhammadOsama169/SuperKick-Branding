@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import { Spring } from "react-spring";
 import {NavbarContainer,
     InnerContainer,OuterContainer,
-    LeftContainer,
-    RightContainer,
     Logo,
     NavbarLinkContainer,
     NavbarLink,
@@ -23,10 +20,10 @@ function Navbar() {
             <InnerContainer>
                 <Logo ><img src={LogoImg}alt="Logo" /></Logo>
                 <NavbarLinkContainer>
-                    <NavbarLink to="/"> WHO WE ARE </NavbarLink>
-                    <NavbarLink to="/SERVICES"> SERVICES </NavbarLink>
-                    <NavbarLink to="/RESOURCES"> RESOURCES </NavbarLink>
-                    <NavbarLink to="/LETS TALK"> LETS TALK </NavbarLink>
+                    <NavbarLink > WHO WE ARE </NavbarLink>
+                    <NavbarLink > SERVICES </NavbarLink>
+                    <NavbarLink > RESOURCES </NavbarLink>
+                    <NavbarLink > LETS TALK </NavbarLink>
                     <HamburgerButton 
                         onClick={() => {
                             setExtendNavbar((curr) => !curr);
@@ -37,22 +34,12 @@ function Navbar() {
                     <Button>LET'S WORK TOGETHER</Button>
             </InnerContainer>
 
-            <Spring 
-                from={{opacity:0}}
-                to={{opacity:1}}
-            >
-                {props=> (
-                    <div style={props}>
-                        {extendNavbar && (<OuterContainer>
-                        <NavbarLinkExtended to="/"> WHO WE ARE </NavbarLinkExtended>
-                        <NavbarLinkExtended to="/products"> SERVICES </NavbarLinkExtended>
-                        <NavbarLinkExtended to="/contact"> RESOURCES </NavbarLinkExtended>
-                        <NavbarLinkExtended to="/about"> LETS TALK </NavbarLinkExtended>
-                        </OuterContainer>)}
-                    </div>
-                )}
-            </Spring>
-
+            {extendNavbar && (<OuterContainer>
+            <NavbarLinkExtended > WHO WE ARE </NavbarLinkExtended>
+            <NavbarLinkExtended > SERVICES </NavbarLinkExtended>
+            <NavbarLinkExtended > RESOURCES </NavbarLinkExtended>
+            <NavbarLinkExtended > LETS TALK </NavbarLinkExtended>
+            </OuterContainer>)}
 
         </NavbarContainer>
     </> 

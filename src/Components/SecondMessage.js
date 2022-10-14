@@ -2,7 +2,7 @@ import React from 'react'
 import { LeftContainer, MainContainer, RightContainer,CoverText,MainHeader,ImageContainer,PinkFrame,Button } from './Styles/SecondMessage.styled'
 import ImgCover from "../assets/images/team-photo_1_478x318.png";
 
-export default function Section1() {
+export default function SecondMessage() {
   return (
     <>
     <MainContainer>

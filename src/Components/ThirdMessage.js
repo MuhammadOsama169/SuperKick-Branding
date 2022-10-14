@@ -2,7 +2,7 @@ import React from 'react'
 import { LeftContainer, MainContainer, RightContainer,CoverText,MainHeader,ImageContainer,PinkFrame,Button } from './Styles/ThirdMessage.styled'
 import ImgCover from "../assets/images/superkick-team-brainstorming 1.png";
 
-export default function Section1() {
+export default function ThirdMessage() {
   return (
     <>
     <MainContainer>

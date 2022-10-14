@@ -2,7 +2,7 @@ import React from 'react'
 import { LeftContainer, MainContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from './Styles/FirstMessage.styled'
 
 
-export default function Section1() {
+export default function FirstMessage() {
   return (
     <>
     <MainContainer>

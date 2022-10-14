@@ -14,18 +14,26 @@ import Quotes from './Components/Quotes'
 
 function App() {
   return (
-    <>
+    <Router>
+
       <GlobalStyles />
       <Navbar />
       <Cover/>
       <Section1/>
-      <SectionBreak />
+      <SectionBreak></SectionBreak>
       <Section2/>
       <Quotes/>
       <Banner/>
       <Section3/>
       <Footer/>
-    </>
+
+      <Routes>
+        <Route path="/" />
+        <Route path="/products" />
+        <Route path="/contact" />
+        <Route path="/about" />
+      </Routes>
+    </Router>
   );
 }
 

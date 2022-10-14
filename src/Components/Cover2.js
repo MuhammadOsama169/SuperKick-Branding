@@ -3,7 +3,7 @@ import { TopContainer,MainContainer,CoverText,HeaderText,CoverText2,CoverText3, 
 
 
 
-export default function Cover() {
+export default function Cover2() {
   return (
     <>
     <MainContainer>
