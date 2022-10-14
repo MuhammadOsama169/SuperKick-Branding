@@ -7,33 +7,25 @@ import GlobalStyles from './Components/Styles/Global'
 import Banner from './Components/Banner';
 import Section3 from './Components/Section3';
 import Footer from './Components/Footer';
-import SecondPage from './Components/SecondPage';
 import SectionBreak from './Components/SectionBreak';
+import Quotes from './Components/Quotes'
 
 
 
 function App() {
   return (
-    <Router>
-      <>
+    <>
       <GlobalStyles />
       <Navbar />
       <Cover/>
       <Section1/>
-      <SectionBreak></SectionBreak>
+      <SectionBreak />
       <Section2/>
+      <Quotes/>
       <Banner/>
-      {/* <Section3/> */}
-      {/* <Footer/> */}
-      {/* <SecondPage/> */}
-      </>
-      <Routes>
-        <Route path="/" />
-        <Route path="/products" />
-        <Route path="/contact" />
-        <Route path="/about" />
-      </Routes>
-    </Router>
+      <Section3/>
+      <Footer/>
+    </>
   );
 }
 

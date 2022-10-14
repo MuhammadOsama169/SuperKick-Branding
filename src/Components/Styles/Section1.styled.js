@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     width:100%;
-    height:90vh;
+    height:100vh;
     align-items: center;
     @media screen and (max-width: 900px) {
         display: flex;
@@ -74,14 +74,14 @@ export const RightContainer = styled.div`
 
 export const CoverText = styled.div`
     font-family: 'Work Sans', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: regular;
-    font-weight: 400;
+    font-weight: 10px;
     line-height: 28.15px;
     color: black;
     @media screen and (max-width: 900px) {
         padding: 10px;
-        font-size: 24px;
+        font-size: 22px;
         display: flex;
         justify-content: center;
         align-items: center;

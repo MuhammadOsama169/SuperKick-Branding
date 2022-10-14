@@ -1,8 +1,5 @@
 import React from 'react'
 import { MainContainer,TopContainer,ImageContainer2,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer,InnerContainer,ImageContainer,ImageContainer3 } from './Styles/Section2.styled'
-import Img2 from "../assets/images/Group-4.png";
-import Img3 from "../assets/images/Group-7.png";
-
 
 export default function Section2() {
   return (
@@ -31,7 +28,7 @@ export default function Section2() {
             </InnerContainer>
         </TopContainer>
         <EndContainer>
-            <Button>TAKE A BRAND HEALTH QUIZ</Button>
+            <Button>LET'S WORK TOGETHER</Button>
         </EndContainer>
     </MainContainer>
 

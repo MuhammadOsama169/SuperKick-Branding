@@ -11,7 +11,7 @@ export default function Cover() {
         <LeftContainer>
           <img src={Img}alt="img" />
           <CoverText>We design clear brand messaging <br></br> to help your business stand out</CoverText>
-          <Button>TAKE A BRAND HEALTH QUIZ</Button>
+          <Button>LET'S WORK TOGETHER </Button>
         </LeftContainer>
 
         <RightContainer>

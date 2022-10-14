@@ -6,7 +6,7 @@ export default function Section3() {
     <MainContainer>
         <MainHeader>get unstuck</MainHeader>
         <Text>Build a clearer brand message today.</Text>
-        <Button>TAKE A BRAND HEALTH QUIZ</Button>
+        <Button>LET'S WORK TOGETHER</Button>
     </MainContainer>
   )
 }

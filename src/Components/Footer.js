@@ -1,13 +1,12 @@
 import React from 'react'
-import { LeftContainer,MainContainer, StyledFooter,NavbarLinkExtended, OuterContainer} from './Styles/Footer.styled'
-import LogoImg from "../assets/images/Logo-black.png";
-import { Logo } from './Styles/Footer.styled';
+import { LeftContainer,MainContainer, StyledFooter,NavbarLinkExtended, OuterContainer,ImageContainer} from './Styles/Footer.styled'
+
 
 export default function Footer() {
   return (
     <MainContainer>
         <LeftContainer>
-            <Logo ><img src={LogoImg}alt="Logo" /></Logo>
+            <ImageContainer ></ImageContainer>
         </LeftContainer>
         <OuterContainer>
             <NavbarLinkExtended to="/"> WHO WE ARE </NavbarLinkExtended>

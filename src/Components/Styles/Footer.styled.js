@@ -1,19 +1,24 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Img1 from "../../assets/images/Superkick_horiz_04.png";
+
 
 export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 216px;
-    background: #FF005C;
-    @media (max-width: 700px) {
-        display: flex;
-        flex-direction: column ;
-        height: auto;
-    
-    }
+    width: 100%;
+    height: auto;
+    margin:auto;
+    background: black;
+    @media screen and (max-width: 900px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column ; 
+      padding:10%;
+  }
+
 `;
 
 export const LeftContainer = styled.div`
@@ -25,10 +30,19 @@ export const LeftContainer = styled.div`
         height: auto;}
 `;
 
-export const Logo = styled.div`
-  max-width: 300px;
-  height: auto;
+export const ImageContainer = styled.div`
+  background-image: url(${Img1});
+  background-size:contain;
+  width: 300px;
+  height: 150px;
+  background-repeat: no-repeat;
+  
+  @media screen and (max-width: 900px) {
+      width:350px ;
+      height: 350px;
+  }
 `;
+
 
 
 export const StyledFooter = styled.footer`
@@ -60,8 +74,7 @@ export const StyledFooter = styled.footer`
   p {
     text-align: right;
   }
-  
-  @media (max-width: 700px) {
+  @media screen and (max-width: 900px) {
     display: none;
     text-align: center;
     font-style: bold;
@@ -78,7 +91,8 @@ export const StyledFooter = styled.footer`
     p {
       text-align: center;
     }
-  }
+}
+
 `
 export const OuterContainer = styled.div`
   display: flex;
@@ -100,6 +114,9 @@ export const NavbarLinkExtended = styled(Link)`
   color: #F5F5F5;
   text-decoration: none;
   padding: 5px;
+  @media (max-width: 900px) {
+    margin-top:1%;
+} 
   &:hover {
     color:  #FFCD3D;
     transform: scale(0.98);

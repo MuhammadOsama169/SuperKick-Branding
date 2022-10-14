@@ -16,8 +16,12 @@ export const InnerContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between ;
-    padding-left:15%;
-    padding-right:15%;
+    padding-left:8%;
+    padding-right:8%;
+    @media all and (max-width: 1086px) {
+      padding-left:5%;
+      padding-right:5%;
+    }
     
 `;
 

@@ -30,7 +30,7 @@ export const CardRight = styled.div`
     height: 450px;
     padding-left:28px;
     padding-right:26px;
-    padding-top:18px;
+    padding-top:20px;
     padding-bottom:18px;
     background-color: black;
     @media screen and (max-width: 900px) {
