@@ -7,9 +7,22 @@ export const MainContainer = styled.div`
     position:relative;
     margin-top:120px;
     @media screen and (max-width:1000px) {
+
         display: flex;
         flex-direction: column ;
         padding:2%;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top:20px;
+    }
+    @media screen and (max-width:500px) {
+        margin-top:5px;
+        display: flex;
+        flex-direction: column ;
+        padding:0px;
         display: flex;
         flex-direction: column ;
         justify-content: center;
@@ -60,6 +73,10 @@ export const LQuotes = styled.span`
     left:-10px;
     color:#FF005C; 
     text-shadow:0 1px rgba(255,255,255,0.5);
+    @media screen and (max-width:1024px) {
+        top:0px;
+        left:-10px;
+    }
     @media screen and (max-width:780px) {
         top:0px;
         left:-10px;

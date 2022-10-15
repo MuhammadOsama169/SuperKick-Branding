@@ -17,6 +17,7 @@ export const MainContainer = styled.div`
       align-items: center;
       flex-direction: column ; 
       padding:10%;
+      height: auto;
   }
 
 `;
@@ -38,8 +39,8 @@ export const ImageContainer = styled.div`
   background-repeat: no-repeat;
   
   @media screen and (max-width: 900px) {
-      width:350px ;
-      height: 350px;
+      width:150px ;
+      height: 60px;
   }
 `;
 
@@ -57,7 +58,7 @@ export const StyledFooter = styled.footer`
     color: #fff;
   ul {
     list-style-type: none;
-    padding: 50px;
+    padding: 10px;
 
   }
 
@@ -74,13 +75,14 @@ export const StyledFooter = styled.footer`
   p {
     text-align: right;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 500px) {
     display: none;
     text-align: center;
     font-style: bold;
     font-weight: 500;
     font-size: 18px;
     padding-left:0px;
+    padding: 0
     ul {
       padding: 0;
       display: flex;
@@ -101,6 +103,8 @@ export const OuterContainer = styled.div`
   padding: 50px;
   @media (min-width: 700px) {
     display: none;
+    padding: 10px;
+
   }
 `;
 

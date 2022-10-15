@@ -39,7 +39,7 @@ export const NavbarLinkContainer = styled.div`
   display: flex;
   justify-content: space-between ;
   padding:50px;
-  @media all and (max-width: 1086px) {
+  @media screen and (max-width: 1086px) {
     padding:0px;
   }
 `;
@@ -122,7 +122,9 @@ export const OuterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  @media all and (min-width: 1086px) {
+  @media screen and (min-width: 1086px) {
     display: none;
+    padding: 10px;
+
   }
 `;
