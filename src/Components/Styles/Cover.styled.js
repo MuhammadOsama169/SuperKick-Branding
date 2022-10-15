@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import ImgCover from "../../assets/images/team-photo5.png";
+
 
 export const MainContainer = styled.div` 
     background-color: #FF005C;
@@ -7,11 +9,18 @@ export const MainContainer = styled.div`
     align-items: center;
     flex-direction: row ;
     width:100%;
+    height:auto;
 
     @media screen and (max-width:700px) {
         display: flex;
         flex-direction: column ;
         padding:2%;
+    }
+    @media screen and (max-width:800px) {
+        display: flex;
+        flex-direction: column ;
+        padding:2%;
+
     }
 
 `;
@@ -25,6 +34,7 @@ export const InnerContainer = styled.div`
     @media screen and (max-width: 700px) {
         display: flex;
         flex-direction: column ;
+        flex-direction: column-reverse;
 `;
 export const LeftContainer = styled.div`
     display: flex;
@@ -34,7 +44,10 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2%;
 `;
 export const CoverText = styled.div`
     display: flex;
@@ -83,5 +96,26 @@ export const Button = styled.div`
         align-items: center;
     }
     
+    
+`;
+export const ImageContainer = styled.div`
+    background-image: url(${ImgCover});
+    background-size:contain;
+    background-repeat: no-repeat;
+    
+    width: 550px;
+    height: 370px;
+    @media screen and (max-width: 900px) {
+        width:350px ;
+        height: 250px;
+    }
+    @media screen and (max-width: 700px) {
+        width:450px ;
+        height: 300px;
+    }
+    @media screen and (max-width: 500px) {
+        width:300px ;
+        height: 200px;
+    }
     
 `;

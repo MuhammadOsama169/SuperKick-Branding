@@ -10,12 +10,12 @@ import Footer from './Footer'
 function SecondPage() {
   return (
     <>
-    <Navbar></Navbar>
-    <Cover2></Cover2>
-    <FirstMessage></FirstMessage>
-    <SecondMessage></SecondMessage>
-    <ThirdMessage></ThirdMessage>
-    <BannerCallToAction></BannerCallToAction>
+    <Navbar/>
+    <Cover2/>
+    <FirstMessage/>
+    <SecondMessage/>
+    <ThirdMessage/>
+    <BannerCallToAction/>
     <Footer></Footer>
     </>
   )

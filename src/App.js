@@ -8,7 +8,7 @@ import Banner from './Components/Banner';
 import Section3 from './Components/Section3';
 import Footer from './Components/Footer';
 import SectionBreak from './Components/SectionBreak';
-import Quotes from './Components/Quotes'
+import Quotes from './Components/Quotes';
 
 
 

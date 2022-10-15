@@ -1,15 +1,32 @@
 import styled from "styled-components";
+import ImgCover from "../../assets/images/women-walking.png";
 
-
+export const ImageContainer = styled.div`
+    background-image: url(${ImgCover});
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 450px;
+    @media screen and (max-width: 900px) {
+        width:350px ;
+        height: 350px;
+    }
+    
+`;
 export const MainContainer = styled.div`
     width:100%;
-    height:100vh;
+    height:70vh;
     align-items: center;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
         height:100vh;
     }
+    @media screen and  (max-width: 900px) {
+        display: flex;
+        flex-direction: column ;
+        height:90vh;
+    } 
 
 `;
 export const InnerContainer = styled.div`
@@ -18,7 +35,7 @@ export const InnerContainer = styled.div`
     justify-content: center;
     align-items: center;
     max-width:1024px;
-    padding-top:5%;
+    padding-top:3%;
     padding-bottom:5%;
     @media screen and (max-width: 900px) {
         padding-top:0.1%;
@@ -30,7 +47,6 @@ export const InnerContainer = styled.div`
     }
 `;
 export const OuterContainer = styled.div`
-    margin:auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +124,7 @@ export const MainHeader = styled.div`
     color: #FF005C;
     padding-bottom: 20px;
     @media screen and (max-width: 900px) {
-        padding: 10px;
+        padding: 1%;
         font-size: 64px;
         display: flex;
         justify-content: center;

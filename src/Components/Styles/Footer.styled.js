@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column ; 
-      padding:10%;
+      padding:5%;
       height: auto;
   }
 
@@ -39,8 +39,8 @@ export const ImageContainer = styled.div`
   background-repeat: no-repeat;
   
   @media screen and (max-width: 900px) {
-      width:150px ;
-      height: 60px;
+      width:190px ;
+      height: 70px;
   }
 `;
 
@@ -75,7 +75,7 @@ export const StyledFooter = styled.footer`
   p {
     text-align: right;
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 900px) {
     display: none;
     text-align: center;
     font-style: bold;
@@ -92,7 +92,8 @@ export const StyledFooter = styled.footer`
     }
     p {
       text-align: center;
-    }
+  }
+
 }
 
 `
@@ -101,9 +102,9 @@ export const OuterContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  @media (min-width: 700px) {
+  @media screen and (min-width: 900px) {
     display: none;
-    padding: 10px;
+    padding: 5px;
 
   }
 `;

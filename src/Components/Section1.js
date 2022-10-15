@@ -1,6 +1,5 @@
 import React from 'react'
-import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader } from './Styles/Section1.styled'
-import ImgCover from "../assets/images/women-walking.png";
+import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader,ImageContainer } from './Styles/Section1.styled'
 
 export default function Section1() {
   return (
@@ -14,7 +13,7 @@ export default function Section1() {
               </CoverText>
           </LeftContainer>
           <RightContainer>
-              <img src={ImgCover}alt="img" />
+              <ImageContainer></ImageContainer>
           </RightContainer>
       </InnerContainer>
 
