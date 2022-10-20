@@ -1,38 +1,17 @@
-import Navbar from './Components/Navbar';
-import Cover from './Components/Cover';
-import Section1 from './Components/Section1';
-import Section2 from './Components/Section2';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import GlobalStyles from './Components/Styles/Global'
-import Banner from './Components/Banner';
-import Section3 from './Components/Section3';
-import Footer from './Components/Footer';
-import SectionBreak from './Components/SectionBreak';
-import Quotes from './Components/Quotes';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import HomePage from './Components/HomePage';
+import SecondPage from './Components/SecondPage';
 
 
 
 function App() {
   return (
     <Router>
-
-      <GlobalStyles />
-      <Navbar />
-      <Cover/>
-      <Section1/>
-      <SectionBreak></SectionBreak>
-      <Section2/>
-      <Quotes/>
-      <Banner/>
-      <Section3/>
-      <Footer/>
-
-      <Routes>
-        <Route path="/" />
-        <Route path="/products" />
-        <Route path="/contact" />
-        <Route path="/about" />
-      </Routes>
+        <Routes>
+          <Route exact path="/" element={<HomePage/>}></Route>
+          <Route exact path="/services" element={<SecondPage/>}></Route>
+        </Routes>
     </Router>
   );
 }

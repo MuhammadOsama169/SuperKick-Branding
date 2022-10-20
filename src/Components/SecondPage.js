@@ -1,22 +1,20 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Cover2 from './Cover2'
+import CoverBottom2 from './CoverBottom2'
 import FirstMessage from './FirstMessage'
 import SecondMessage from './SecondMessage'
 import ThirdMessage from './ThirdMessage'
 import BannerCallToAction from './BannerCallToAction'
-import Footer from './Footer'
 
 function SecondPage() {
   return (
     <>
-    <Navbar/>
     <Cover2/>
+    <CoverBottom2/>
     <FirstMessage/>
     <SecondMessage/>
     <ThirdMessage/>
     <BannerCallToAction/>
-    <Footer></Footer>
     </>
   )
 }

@@ -55,6 +55,7 @@ export const CoverText = styled.div`
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     font-style: regular;
+    text-align: center;
     font-weight: 200;
     font-size: 28px;
     line-height: 33px;
