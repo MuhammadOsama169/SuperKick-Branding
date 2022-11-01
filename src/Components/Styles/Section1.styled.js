@@ -22,11 +22,6 @@ export const MainContainer = styled.div`
         flex-direction: column ;
         height:100vh;
     }
-    @media screen and  (max-width: 900px) {
-        display: flex;
-        flex-direction: column ;
-        height:90vh;
-    } 
 
 `;
 export const InnerContainer = styled.div`

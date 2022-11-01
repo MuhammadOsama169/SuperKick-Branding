@@ -19,7 +19,6 @@ export const TopContainer = styled.div`
     top: 177px;
     padding:2%;
     
-
     @media screen and (max-width:900px) {
         display: flex;
         flex-direction: column ;
