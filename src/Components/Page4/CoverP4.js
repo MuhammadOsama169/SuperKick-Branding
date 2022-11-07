@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,ImageContainer,TopContainer,HeaderText } from '../Styles/Page4/CoverP4.styled'
+import { MainContainer,ImageContainer,TopContainer,HeaderText,Text } from '../Styles/Page4/CoverP4.styled'
 
 
 
@@ -8,7 +8,8 @@ export default function CoverP3() {
     <MainContainer>
         <ImageContainer>
             <TopContainer>
-                <HeaderText>Origin Story</HeaderText>
+                <HeaderText>HIT US UP</HeaderText>
+                <Text>How can we give your brand a boost?</Text>
             </TopContainer>
         </ImageContainer>
     </MainContainer>

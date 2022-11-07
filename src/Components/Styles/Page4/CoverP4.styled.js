@@ -15,12 +15,15 @@ export const MainContainer = styled.div`
 
 export const TopContainer = styled.div`
     position: absolute;
-    padding-top:2%;
-    display:flex;
- width:100%;
+
+    padding:10px;
+    width:100%;
     margin:auto;
     display: flex;
+    flex-direction:column;
     justify-content: center;
+    align-item: center;
+text-align:center;
 
     @media screen and (max-width: 900px) {
         height:25vh;
@@ -62,6 +65,22 @@ export const HeaderText = styled.div`
     line-height: 1.1em;;
     color: #FFCD3D;
     text-transform: uppercase;
+
+    @media screen and (max-width: 900px) {
+        font-size: 64px;
+    }
+    @media screen and (max-width: 490px) {
+        font-size: 44px;
+    }
+`;
+
+export const Text = styled.div`
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.1em;;
+    color: #FFFFFF;
 
     @media screen and (max-width: 900px) {
         font-size: 64px;
