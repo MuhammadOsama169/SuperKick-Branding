@@ -19,7 +19,7 @@ const ButtonWrapper = ({
         onClick:handleSubmit
  }
     return(
-        <Button {...configButton}>
+        <Button {...configButton} size="large">
             {children}
         </Button>
     );

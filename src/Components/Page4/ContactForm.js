@@ -1,7 +1,7 @@
 import React from 'react'
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme  } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import {
   Container,
@@ -11,26 +11,36 @@ import {
 import Textfield from './FormsUI/TextField';
 import Button from './FormsUI/Button'
 
+
+const theme = createTheme ({
+
+  typography: {
+     fontFamily: 'Bebas Neue',
+     fontSize:24,
+   },
+   palette: {
+    primary:{
+      main:'#FFCD3D',
+      
+    }
+    
+  },
+})
+
 const useStyles = makeStyles((theme) => ({
   formWrapper: {
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(8),
+    
   },
-  Text: {
-    backgroundColor: '#eee',
-    border: '1px solid #bbb',
+  textBackground: {
+    backgroundColor:'#eee',
   },
+  
+
 }));
 
-const theme = createTheme({
-  typography: {
-    allVariants: {
-      fontFamily: 'Bebas Neue',
-      fontSize: 50,
-      color: '#999',
-    },
-  },
-});
+
 
 const INITIAL_FORM_STATE = {
   email:'',
@@ -56,85 +66,89 @@ const ContactForm = () => {
   const classes = useStyles();
 
   return (
-    <Grid container theme={theme} >
-      <Grid item xs={12}>
-        <Container maxWidth='md'>
-          <div className={classes.formWrapper} >
+    <ThemeProvider theme={theme} >
+      <Grid container  >
+        <Grid item md={12}>
+          <Container maxWidth='md'>
+            <div className={classes.formWrapper}  >
 
-            <Formik
-              initialValues={{
-                ...INITIAL_FORM_STATE
-              }}
-              validationSchema={VALIDATION}
-              onSubmit={values => {
-                console.log(values);
-              }}
-            >
-              <Form>
+              <Formik
+                initialValues={{
+                  ...INITIAL_FORM_STATE
+                }}
+                validationSchema={VALIDATION}
+                onSubmit={values => {
+                  console.log(values);
+                }}
+              >
+                <Form  >
 
-                <Grid container spacing={2} >
+                  <Grid container spacing={4}  >
 
-                  <Grid item xs={6} >
-                    <Textfield className={classes.Text && theme}
-                      name='name'
-                      label='NAME'
-                    />
+                    <Grid item md={6} xs={12} >
+                      <Textfield className={classes.textBackground}
+                        name='name'
+                        label='NAME'
+                      />
+                    </Grid>
+
+                    <Grid item md={6}  xs={12}>
+                      <Textfield className={classes.textBackground}
+                        name='email'
+                        label='EMAIL ADDRESS'
+                      />
+                    </Grid>
+
+
+                    <Grid item md={6}  xs={12} >
+                      <Textfield className={classes.textBackground}
+                        name='business'
+                        label='BUSINESS ADDRESS'
+                      />
+                    </Grid>
+
+                    <Grid item md={6}  xs={12} >
+                      <Textfield className={classes.textBackground}
+                        name='phone'
+                        label='PHONE'
+                      />
+                    </Grid>
+
+
+                    <Grid item md={12} xs={12}>
+                      <Textfield className={classes.textBackground}
+                        name='website'
+                        label='WEBSITE'
+                      />
+                    </Grid>
+
+                    <Grid item md={12} xs={12}>
+                      <Textfield className={classes.textBackground}
+                        name='message'
+                        label='MESSAGE'
+                        multiline={true}
+                        minRows={4}
+                      />
+                    </Grid>
+
+                    <Grid item md={3} xs={12} >
+{/* Button sizing in FormsUI/Button.js */}
+                        <Button >
+                          SUBMIT
+                        </Button>
+                    </Grid>
+                    
+
                   </Grid>
 
-                  <Grid item xs={6}>
-                    <Textfield className={classes.Text}
-                      name='email'
-                      label='EMAIL ADDRESS'
-                    />
-                  </Grid>
+                </Form>
+              </Formik>
 
-
-                  <Grid item xs={6}>
-                    <Textfield className={classes.Text }
-                      name='business'
-                      label='BUSINESS ADDRESS'
-                    />
-                  </Grid>
-
-                  <Grid item xs={6}>
-                    <Textfield className={classes.Text}
-                      name='phone'
-                      label='PHONE'
-                    />
-                  </Grid>
-
-
-                  <Grid item xs={12}>
-                    <Textfield className={classes.Text}
-                      name='website'
-                      label='WEBSITE'
-                    />
-                  </Grid>
-
-                  <Grid item xs={12} >
-                    <Textfield className={classes.Text}
-                      name='message'
-                      label='MESSAGE'
-                      multiline={true}
-                      minRows={4}
-                    />
-                  </Grid>
-
-                  <Grid item xs={12}>
-                      <Button>
-                        SUBMIT
-                      </Button>
-                  </Grid>
-
-                </Grid>
-
-              </Form>
-            </Formik>
-
-          </div>
-        </Container>
+            </div>
+          </Container>
+        </Grid>
       </Grid>
-    </Grid>
+    </ThemeProvider>
   );
 };
 

@@ -9,15 +9,17 @@ export const MainContainer = styled.div`
     margin:auto;
 
     @media screen and (max-width:900px) {
-        height:30vh;
+        height:50vh;
+    }
+    @media screen and (max-width:600px) {
+        height:40vh;
     }
 `;
 
 export const TopContainer = styled.div`
     position: absolute;
-
-    padding:10px;
     width:100%;
+    padding-top:60px;
     margin:auto;
     display: flex;
     flex-direction:column;
@@ -28,7 +30,7 @@ text-align:center;
     @media screen and (max-width: 900px) {
         height:25vh;
         display: flex;
-        align-items: flex-start;
+        padding-top:5px;
 
     }
 `;
@@ -45,13 +47,13 @@ export const ImageContainer = styled.div`
     @media screen and (max-width: 900px) {
         background-size: contain;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
 
     }
     @media screen and (max-width: 650px) {
         background-size: contain;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
 
     }
     
@@ -83,9 +85,9 @@ export const Text = styled.div`
     color: #FFFFFF;
 
     @media screen and (max-width: 900px) {
-        font-size: 64px;
+        font-size: 28px;
     }
     @media screen and (max-width: 490px) {
-        font-size: 44px;
+        font-size: 25px;
     }
 `;
