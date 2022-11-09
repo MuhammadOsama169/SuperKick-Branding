@@ -1,6 +1,5 @@
 import React from 'react'
-import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader,ImageContainer } from './Styles/Section1.styled'
-
+import { LeftContainer, MainContainer,InnerContainer, RightContainer,CoverText,MainHeader,ImageContainer } from '../../Components/Styles/HomePage/Section1.styled'
 export default function Section1() {
   return (
     <>

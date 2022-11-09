@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgCover from "../../assets/images/women-walking.png";
+import ImgCover from "../../../assets/images/women-walking.png";
 
 export const ImageContainer = styled.div`
     background-image: url(${ImgCover});

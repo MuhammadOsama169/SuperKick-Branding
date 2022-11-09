@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,ImageContainer,RightContainer,BoxHeader,CoverText,Button,InnerContainer,LogoImageContainer } from './Styles/Banner.styled'
+import { MainContainer,ImageContainer,RightContainer,BoxHeader,CoverText,Button,InnerContainer,LogoImageContainer } from '../../Components/Styles/HomePage/Banner.styled'
 
 
 export default function Banner() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { LeftContainer, MainContainer,InnerContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from './Styles/SecondMessage.styled'
+import { LeftContainer, MainContainer,InnerContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from '../../Components/Styles/Page2/SecondMessage.styled'
 
 
 export default function SecondMessage() {

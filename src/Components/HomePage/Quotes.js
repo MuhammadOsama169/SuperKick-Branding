@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,Blockquotes,LQuotes,RQuotes,Text,UnderText} from './Styles/Quotes.styled'
+import { MainContainer,Blockquotes,LQuotes,RQuotes,Text,UnderText} from '../Styles/HomePage/Quotes.styled'
 
 export default function Quotes() {
   return (

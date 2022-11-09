@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ImgCover from "../../assets/images/team-photo5.png";
+import ImgCover from "../../../assets/images/team-photo5.png";
 
 
 export const MainContainer = styled.div` 

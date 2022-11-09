@@ -1,6 +1,7 @@
 import React from 'react'
-import { RightContainer,LeftContainer,MainContainer,InnerContainer,Button,CoverText,ImageContainer } from './Styles/Cover.styled'
-import Img from "../assets/images/Blend 1.png";
+import { RightContainer,LeftContainer,MainContainer,InnerContainer,Button,CoverText,ImageContainer } from '../../Components/Styles/HomePage/Cover.styled'
+import Img from "../../assets/images/Blend 1.png";
+
 
 
 

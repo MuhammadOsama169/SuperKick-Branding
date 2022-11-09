@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,TopContainer,ImageContainer2,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer,InnerContainer,ImageContainer,ImageContainer3 } from './Styles/Section2.styled'
+import { MainContainer,TopContainer,ImageContainer2,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer,InnerContainer,ImageContainer,ImageContainer3 } from '../../Components/Styles/HomePage/Section2.styled'
 
 export default function Section2() {
   return (

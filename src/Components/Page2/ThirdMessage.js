@@ -1,5 +1,5 @@
 import React from 'react'
-import { LeftContainer, MainContainer,InnerContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from './Styles/ThirdMessage.styled'
+import { LeftContainer, MainContainer,InnerContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from '../../Components/Styles/Page2/ThirdMessage.styled'
 
 export default function ThirdMessage() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer,InnerContainer,BoxHeader,Button,ButtonContainer } from './Styles/BannerCallToAction.styled'
+import { MainContainer,InnerContainer,BoxHeader,Button,ButtonContainer } from '../../Components/Styles/Page2/BannerCallToAction.styled'
 
 
 export default function BannerCallToAction() {

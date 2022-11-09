@@ -1,13 +1,11 @@
 import styled from "styled-components";
-import img from "../../assets/images/team-photo_1_478x318.png";
-
+import img from "../../../assets/images/superkick-team-brainstorming-1.png";
 
 export const MainContainer = styled.section`
-    width:100%;
+    width:100%; 
     margin-top:15%;
+    margin-bottom:15%;
     background: linear-gradient(0deg,rgba(255,255,255,1) 57%,rgba(255,205,61,1) 57%,rgba(255,205,61,1) 76%,rgba(255,255,255,1) 76%);
-}
-
 `;
 export const InnerContainer = styled.div`
     border: 5px solid #1F1F1F;
@@ -20,33 +18,30 @@ export const InnerContainer = styled.div`
     margin-bottom:150px;
     padding:20px;
     
-    
-@media screen and (max-width: 1025px) {
-    height:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:50px;
-    margin-bottom:50px;
-    max-width:700px;
-    margin:auto;
-    
-}
+    @media screen and (max-width: 1025px) {
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:50px;
+        margin-bottom:50px;
+        max-width:660px;
+        margin:auto;  
+    }
     @media screen and (max-width: 785px) {
-        max-width:550px;  
+        max-width:510px;  
     }
     @media screen and (max-width: 610px) {
-        max-width:450px;  
+        max-width:415px;  
     }
     @media screen and (max-width: 500px) {
-        max-width:350px;  
+        max-width:310px;  
     }
 
     @media screen and (max-width: 400px) {
         max-width:280px;  
     }
-
 `;
 export const TextContainer = styled.div`
 margin-left:10px;
@@ -95,44 +90,30 @@ font-family: 'Work Sans', sans-serif;
     }
     
 `;
-export const CoverText2 = styled.div`
-font-family: 'Work Sans', sans-serif;
-    font-size: 24px;
-    font-style: regular;
-    font-weight: 400;
-    line-height: 28px;
-    color: white;
-    padding-top:5px;
-    padding-bottom:5px;
-
-    @media screen and (max-width: 569px) {
-        font-size: 18px;
-    }
-    
-`;
 export const MainHeader = styled.div`
 
     font-family: 'Bebas Neue', cursive;
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 64px;
     line-height: 77px;
     color: #FF005C;
     padding-top:1%;
     text-transform: uppercase; 
     @media screen and (max-width: 1025px) {
+        font-size: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     @media screen and (max-width: 610px) {
-        line-height: 50px;
         font-size: 50px;
         align-items: flex-start;
     }
     @media screen and (max-width: 506px) {
-        font-size: 40px;
+        font-size: 30px;
+        line-height: 50px;
     }
 `;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { MainContainer, MainHeader,Text,Button } from './Styles/Section3.styled'
+import { MainContainer, MainHeader,Text,Button } from '../../Components/Styles/HomePage/Section3.styled'
 
 export default function Section3() {
   return (

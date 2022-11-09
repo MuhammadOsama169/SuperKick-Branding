@@ -11,7 +11,6 @@ export const NavbarContainer = styled.nav`
 
 
 export const InnerContainer = styled.div`
-    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -38,7 +37,8 @@ export const Logo = styled.div`
 export const NavbarLinkContainer = styled.div`
   display: flex;
   justify-content: space-between ;
-  padding:50px;
+  padding-left:30px;
+  padding-left:50px;
   @media screen and (max-width: 1086px) {
     padding:0px;
   }
@@ -79,7 +79,9 @@ export const NavbarLinkExtended = styled(Link)`
 `;
 
 export const Button = styled.div`
-    width: 300px;
+
+width:400px:
+    max-width: 800px;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -87,18 +89,18 @@ export const Button = styled.div`
     background: #3D6FFF;
     border-radius: 63px;
     font-family: 'Work Sans', sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    
     @media all and (max-width: 1086px) {
       display: none;
     }
     &:hover {
         opacity: 0.9;
-        transform: scale(0.98);
       }
 `;
 

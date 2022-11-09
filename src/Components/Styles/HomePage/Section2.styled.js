@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Img1 from "../../assets/images/Mask-group.png";
-import Img2 from "../../assets/images/Group-4.png";
-import Img3 from "../../assets/images/Group-7.png";
+import Img1 from "../../../assets/images/Mask-group.png";
+import Img2 from "../../../assets/images/Group-4.png";
+import Img3 from "../../../assets/images/Group-7.png";
 
 
 

@@ -31,7 +31,12 @@ function Navbar() {
                         {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
                     </HamburgerButton>
                     </NavbarLinkContainer>
-                    <Button>LET'S WORK TOGETHER</Button>
+                    <Button 
+                        type="button"
+                         href="/contact"
+                    >
+                        LET'S WORK TOGETHER
+                    </Button>
             </InnerContainer>
 
             {extendNavbar && (<OuterContainer>
