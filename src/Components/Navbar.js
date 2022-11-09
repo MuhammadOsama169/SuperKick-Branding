@@ -9,6 +9,7 @@ import {NavbarContainer,
     NavbarLinkExtended} from './Styles/Navbar.styled';
     
 import LogoImg from "../assets/images/Logo.png";
+import { BrowserRouter as  Route } from 'react-router-dom'
 
 
 function Navbar() {
