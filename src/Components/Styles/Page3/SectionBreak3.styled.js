@@ -64,7 +64,7 @@ export const Text = styled.div`
     }
 
 `;
-export const Button = styled.div`
+export const Button = styled.a`
     margin-top:20px;
     width: 250px;
     height: 60px;
@@ -81,6 +81,7 @@ export const Button = styled.div`
     background-color:#FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    text-decoration:none;
     text-transform:uppercase;
     
     @media (max-width: 700px) {

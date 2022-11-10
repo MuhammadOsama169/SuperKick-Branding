@@ -9,8 +9,8 @@ export default function Footer() {
             <ImageContainer ></ImageContainer>
         </LeftContainer>
         <OuterContainer>
-            <NavbarLinkExtended to="/"> WHO WE ARE </NavbarLinkExtended>
-            <NavbarLinkExtended to="/SERVICES"> SERVICES </NavbarLinkExtended>
+            <NavbarLinkExtended to="/contact"> WHO WE ARE </NavbarLinkExtended>
+            <NavbarLinkExtended to="/services"> SERVICES </NavbarLinkExtended>
             <NavbarLinkExtended to="/linkedin"> linkedin </NavbarLinkExtended>
             <NavbarLinkExtended to="/LETS TALK"> LETS TALK </NavbarLinkExtended>
             <NavbarLinkExtended to="/Videos"> Videos </NavbarLinkExtended>

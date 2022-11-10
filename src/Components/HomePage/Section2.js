@@ -1,7 +1,13 @@
 import React from 'react'
 import { MainContainer,TopContainer,ImageContainer2,CardRight,MainHeader,CoverText,BoxHeader,BoxHeader2,Button, EndContainer,InnerContainer,ImageContainer,ImageContainer3 } from '../../Components/Styles/HomePage/Section2.styled'
+import { useNavigate } from 'react-router-dom'
 
 export default function Section2() {
+    const navigate=useNavigate();
+    const navigateToContacts =() =>{
+        navigate('/contact');
+    };
+
   return (
     <>
     <MainContainer>
@@ -16,7 +22,7 @@ export default function Section2() {
             </InnerContainer>
             <InnerContainer>
                 <BoxHeader>brand diagnostic</BoxHeader>
-                <ImageContainer></ImageContainer>
+                <ImageContainer ></ImageContainer>
             </InnerContainer> 
             <InnerContainer>
                 <BoxHeader>messaging Workshop</BoxHeader>
@@ -28,7 +34,8 @@ export default function Section2() {
             </InnerContainer>
         </TopContainer>
         <EndContainer>
-            <Button>LET'S WORK TOGETHER</Button>
+            <Button onClick={navigateToContacts}
+            >LET'S WORK TOGETHER</Button>
         </EndContainer>
     </MainContainer>
 

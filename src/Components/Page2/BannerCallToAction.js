@@ -8,7 +8,7 @@ export default function BannerCallToAction() {
       <InnerContainer>
         <BoxHeader>QUESTIONS?</BoxHeader>
         <ButtonContainer>
-          <Button> CONTACT SUPERKICK</Button>
+          <Button to="/contact"> CONTACT SUPERKICK</Button>
         </ButtonContainer>
       </InnerContainer>
     </MainContainer>

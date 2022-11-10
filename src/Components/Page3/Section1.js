@@ -19,7 +19,7 @@ export default function Section1() {
                 <SubText>Superkick founders Nick Coleman and Matt Reno</SubText>
                 <BoldTextPink>Get unstuck.</BoldTextPink>
                 <BoldText>Build a clearer brand message today.</BoldText>
-                <Button>GET A BRAND DIAGNOSTIC</Button>
+                <Button to="/contact">GET A BRAND DIAGNOSTIC</Button>
             </RightContainer>
         </InnerContainer>
     </MainContainer>

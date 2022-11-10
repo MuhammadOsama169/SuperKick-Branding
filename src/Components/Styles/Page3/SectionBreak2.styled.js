@@ -1,6 +1,7 @@
 
 import styled from "styled-components";
 
+
 export const MainContainer = styled.div`
     width: 100%;
     @media (max-width: 700px) {
@@ -65,7 +66,7 @@ export const Text = styled.div`
     }
 
 `;
-export const Button = styled.div`
+export const Button = styled.a`
     margin-top:20px;
     width: 250px;
     height: 60px;
@@ -80,6 +81,7 @@ export const Button = styled.div`
     font-weight: 600;
     color: #1F1F1F;
     background-color:#FFCD3D;
+    text-decoration:none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     text-transform:uppercase;

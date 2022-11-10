@@ -6,7 +6,7 @@ export default function SectionBreak2() {
     <MainContainer>
         <InnerContainer>
             <Text>Nick reminds business owners why accountability starts at the top.</Text>
-            <Button>subscribe</Button>
+            <Button href="https://www.youtube.com/channel/UCmWU3oIyaIBlwjD5HAwqkTw">subscribe</Button>
         </InnerContainer>
     </MainContainer>
   )

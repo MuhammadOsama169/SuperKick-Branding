@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div`
     width: 100%;
@@ -58,7 +59,7 @@ export const Text = styled.div`
 
 `;
 
-export const Button = styled.div`
+export const Button = styled(Link)`
     margin-top:30px;
     width: 350px;
     height: 60px;
@@ -74,6 +75,7 @@ export const Button = styled.div`
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    text-decoration:none;
     @media (max-width: 700px) {
         margin-top: 10px;
         padding: 0px;

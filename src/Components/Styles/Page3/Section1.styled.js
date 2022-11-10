@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ImgCover from "../../../assets/images/Nick-and-Matt.jpeg";
-
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.section`
     width:100%;
@@ -149,7 +149,7 @@ export const ImageContainer = styled.div`
     }
 
 `;
-export const Button = styled.div`
+export const Button = styled(Link)`
 
     width: 350px;
     height: 60px;
@@ -163,6 +163,7 @@ export const Button = styled.div`
     font-style: normal;
     font-weight: 700;
     color: #FFCD3D;
+    text-decoration:none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 

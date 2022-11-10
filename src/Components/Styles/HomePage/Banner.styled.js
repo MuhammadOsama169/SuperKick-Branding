@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Img1 from "../../../assets/images/Mascot02.png";
 import Img2 from "../../../assets/images/Lockup_Black.png";
-
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div` 
     width: 100%;
@@ -124,7 +124,7 @@ export const CoverText = styled.div`
     
 `;
 
-export const Button = styled.div`
+export const Button = styled(Link)`
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -140,9 +140,10 @@ export const Button = styled.div`
     border-radius: 47.5px;
     text-transform: uppercase;
     color: #FF005C;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     border: 1px solid #FF005C;
+    text-decoration:none;
 
     @media screen and (max-width: 900px) {
         font-size: 15px;

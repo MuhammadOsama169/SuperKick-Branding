@@ -10,21 +10,31 @@ import {NavbarContainer,
     
 import LogoImg from "../assets/images/Logo.png";
 import { BrowserRouter as  Route } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
+
 
 
 function Navbar() {
     const [extendNavbar, setExtendNavbar] = useState(false);
+
+    const navigate = useNavigate();
+    const navigateToContacts = () => {
+      navigate('/contact');
+      };
+
+   
+    
   return (
 
     <>
         <NavbarContainer extendNavbar={extendNavbar}>
             <InnerContainer>
-                <Logo ><img src={LogoImg}alt="Logo" /></Logo>
+                <Logo to="/" ><img src={LogoImg}alt="Logo" /></Logo>
                 <NavbarLinkContainer>
-                    <NavbarLink > WHO WE ARE </NavbarLink>
-                    <NavbarLink > SERVICES </NavbarLink>
+                    <NavbarLink to="/who" > WHO WE ARE </NavbarLink>
+                    <NavbarLink to="/services"> SERVICES </NavbarLink>
                     <NavbarLink > RESOURCES </NavbarLink>
-                    <NavbarLink > LETS TALK </NavbarLink>
+                    <NavbarLink to="/contact" > LETS TALK </NavbarLink>
                     <HamburgerButton 
                         onClick={() => {
                             setExtendNavbar((curr) => !curr);
@@ -32,19 +42,16 @@ function Navbar() {
                         {extendNavbar ? <>&#10005;</> : <> &#8801;</>}
                     </HamburgerButton>
                     </NavbarLinkContainer>
-                    <Button 
-                        type="button"
-                         href="/contact"
-                    >
+                    <Button onClick={navigateToContacts} >
                         LET'S WORK TOGETHER
                     </Button>
             </InnerContainer>
 
             {extendNavbar && (<OuterContainer>
-            <NavbarLinkExtended > WHO WE ARE </NavbarLinkExtended>
-            <NavbarLinkExtended > SERVICES </NavbarLinkExtended>
+            <NavbarLinkExtended to="/who"> WHO WE ARE </NavbarLinkExtended>
+            <NavbarLinkExtended to="/services"> SERVICES </NavbarLinkExtended>
             <NavbarLinkExtended > RESOURCES </NavbarLinkExtended>
-            <NavbarLinkExtended > LETS TALK </NavbarLinkExtended>
+            <NavbarLinkExtended to="/contact"> LETS TALK </NavbarLinkExtended>
             </OuterContainer>)}
 
         </NavbarContainer>

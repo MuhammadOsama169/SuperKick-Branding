@@ -24,7 +24,7 @@ export const InnerContainer = styled.div`
     
 `;
 
-export const Logo = styled.div`
+export const Logo = styled(Link)`
   max-width: 180px;
   height: 61px;
   cursor: pointer;
@@ -57,7 +57,6 @@ export const NavbarLink = styled(Link)`
   padding-left: 20px;
   &:hover {
     color:  #FFCD3D;
-    transform: scale(0.98);
   }
   @media all and (max-width: 1086px) {
     display: none;
@@ -78,23 +77,22 @@ export const NavbarLinkExtended = styled(Link)`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.a`
 
-width:400px:
-    max-width: 800px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #3D6FFF;
-    border-radius: 63px;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    color: #FFCD3D;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+width: 250px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #3D6FFF;
+border-radius: 63px;
+font-family: 'Work Sans', sans-serif;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+color: #FFCD3D;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+cursor: pointer;
     
     @media all and (max-width: 1086px) {
       display: none;

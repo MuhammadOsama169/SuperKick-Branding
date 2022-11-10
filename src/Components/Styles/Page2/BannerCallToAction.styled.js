@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div` 
     width: 100%;
@@ -47,7 +48,7 @@ export const ButtonContainer = styled.div`
     justify-content: center;
     align-items: center;
 `;
-export const Button = styled.div`
+export const Button = styled(Link)`
     width: 380px;
     height: 50px;
     display: flex;
@@ -63,6 +64,7 @@ export const Button = styled.div`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     margin-top:20px;
+    text-decoration:none;
 
     @media screen and (max-width: 450px) {
         font-size: 20px;

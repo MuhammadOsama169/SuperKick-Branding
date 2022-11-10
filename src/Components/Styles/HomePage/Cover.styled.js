@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import ImgCover from "../../../assets/images/team-photo5.png";
-
+import { Link } from "react-router-dom";
 
 export const MainContainer = styled.div` 
     background-color: #FF005C;
@@ -69,7 +69,7 @@ export const CoverText = styled.div`
     }
 `;
 
-export const Button = styled.div`
+export const Button = styled(Link)`
     margin-top:50px;
     width: 300px;
     height: 40px;
@@ -85,6 +85,7 @@ export const Button = styled.div`
     color: #FFCD3D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    text-decoration:none;
     &:hover {
         opacity: 0.9;
         transform: scale(0.98);
