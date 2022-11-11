@@ -4,6 +4,7 @@ import HomePage from './Components/HomePage';
 import SecondPage from './Components/SecondPage';
 import ThirdPage from './Components/ThirdPage';
 import FourthPage from './Components/FourthPage';
+import ResourcePage from './Components/ResourcePage';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/services" element={<SecondPage/>}></Route>
           <Route exact path="/who" element={<ThirdPage/>}></Route>
           <Route exact path="/contact" element={<FourthPage/>}></Route>
+          <Route exact path="/resources" element={<ResourcePage/>}></Route>
         </Routes>
         <Footer/>
     </Router>

@@ -22,7 +22,7 @@ function Navbar() {
       navigate('/contact');
       };
 
-   
+      
     
   return (
 
@@ -33,7 +33,7 @@ function Navbar() {
                 <NavbarLinkContainer>
                     <NavbarLink to="/who" > WHO WE ARE </NavbarLink>
                     <NavbarLink to="/services"> SERVICES </NavbarLink>
-                    <NavbarLink > RESOURCES </NavbarLink>
+                    <NavbarLink to="/resources"> RESOURCES </NavbarLink>
                     <NavbarLink to="/contact" > LETS TALK </NavbarLink>
                     <HamburgerButton 
                         onClick={() => {
@@ -50,7 +50,7 @@ function Navbar() {
             {extendNavbar && (<OuterContainer>
             <NavbarLinkExtended to="/who"> WHO WE ARE </NavbarLinkExtended>
             <NavbarLinkExtended to="/services"> SERVICES </NavbarLinkExtended>
-            <NavbarLinkExtended > RESOURCES </NavbarLinkExtended>
+            <NavbarLinkExtended to="/resources"> RESOURCES </NavbarLinkExtended>
             <NavbarLinkExtended to="/contact"> LETS TALK </NavbarLinkExtended>
             </OuterContainer>)}
 
