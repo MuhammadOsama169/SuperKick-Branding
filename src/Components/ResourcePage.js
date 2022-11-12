@@ -5,13 +5,13 @@ import Banner from './ResourcePage/Banner'
 import Section3 from './ResourcePage/Section3'
 import Section4 from './ResourcePage/Section4'
 import Section5 from './ResourcePage/Section5'
-
+import Slider from './ResourcePage/Slider'
 
 
 export default function ResourcePage() {
   return (
     <>
-        {/* <Slider></Slider> */}
+        <Slider></Slider>
         <Section1></Section1>
         <Section2></Section2>
         <Section3></Section3>
