@@ -8,7 +8,7 @@ import Img3 from "../../../assets/images/BrandOutlaw_AtomicHabits-1-480x270.png"
 
 export const MainContainer = styled.section`
     width:100%;
-
+    margin-top:50px;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
@@ -88,8 +88,17 @@ export const ImageContainer1 = styled.div`
     height: 200px;
     background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
+        width:550px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 export const ImageContainer2 = styled.div`
@@ -99,8 +108,17 @@ export const ImageContainer2 = styled.div`
     height: 200px;
     background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
+        width:550px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 export const ImageContainer3 = styled.div`
@@ -110,8 +128,17 @@ export const ImageContainer3 = styled.div`
     height: 200px;
     background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
+        width:550px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 

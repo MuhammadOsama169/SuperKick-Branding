@@ -7,10 +7,11 @@ import Section4 from './ResourcePage/Section4'
 import Section5 from './ResourcePage/Section5'
 
 
+
 export default function ResourcePage() {
   return (
     <>
-        {/* <Courasoul></Courasoul> */}
+        {/* <Slider></Slider> */}
         <Section1></Section1>
         <Section2></Section2>
         <Section3></Section3>

@@ -32,16 +32,8 @@ export const ImageContainer = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     @media screen and (max-width: 900px) {
-        width: 200px;
-        height: 180px;
-        display: flex;
-        flex-direction: column ;
-        justify-content: center;
-        align-items: center;
-    }
-    @media screen and (max-width: 580px) {
-        width: 150px;
-        height: 150px;
+        width: 300px;
+        height: 280px;
         display: flex;
         flex-direction: column ;
         justify-content: center;
@@ -49,17 +41,7 @@ export const ImageContainer = styled.div`
     }
     
 `;
-export const LogoImageContainer = styled.div`
-    background-image: url(${Img2});
-    background-size:contain;
-    background-repeat: no-repeat;
-    width: 51px;
-    height: 51px;
-    @media screen and (max-width: 900px) {
-        width: 71px;
-        height: 71px;
-    }
-`;
+
 export const RightContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -179,7 +161,6 @@ export const InnerContainer = styled.div`
         justify-content: center;
         align-items: center;
         grid-gap: 5px;
-        grid-template-columns: repeat(2,350px) ;
         grid-template-rows: repeat(2, 350px);   
     }
 `;
@@ -204,7 +185,6 @@ export const StyledFooter = styled.footer`
     text-transform: uppercase;
     &:hover {
     color: #FF005C;
-      transform: scale(0.98);
     }
     
   }
@@ -213,10 +193,10 @@ export const StyledFooter = styled.footer`
     text-align: right;
   }
   @media screen and (max-width: 900px) {
-    display: none;
+
     text-align: center;
     font-style: bold;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     padding-left:0px;
     padding: 0

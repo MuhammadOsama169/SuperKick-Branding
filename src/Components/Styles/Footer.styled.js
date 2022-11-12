@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column ; 
-      padding:5%;
+      padding-top:5%;
       height: auto;
   }
 

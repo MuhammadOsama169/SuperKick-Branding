@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const MainContainer = styled.section`
     width:100%;
-
+    margin-top:50px;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
@@ -21,14 +21,6 @@ export const InnerContainer = styled.div`
     padding-top:3%;
     padding-bottom:5%;
 
-    @media screen and (max-width: 900px) {
-        padding-top:0.1%;
-        padding-bottom:0.1%;
-        display: flex;
-        flex-direction: column ;
-        padding-left:0px;
-        padding-right:0px;
-    }
 `;
 
 export const MainHeader = styled.div`
@@ -44,11 +36,6 @@ export const MainHeader = styled.div`
     color: #FF005C;
     padding: 20px 100px 20px 100px; 
 
-    @media screen and (max-width: 900px) {
-        font-weight: 500;
-        font-size: 60px;
-        padding: 10px; 
-    }
 
 `;
 

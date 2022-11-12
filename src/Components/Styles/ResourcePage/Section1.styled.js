@@ -8,7 +8,7 @@ import Img3 from "../../../assets/images/What_Great_Brands_Do.png";
 
 export const MainContainer = styled.section`
     width:100%;
-
+margin-top:50px;
     @media screen and (max-width: 900px) {
         display: flex;
         flex-direction: column ;
@@ -62,13 +62,9 @@ grid-template-columns: repeat(3,1fr) ;
 grid-gap: 100px;
 
 @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2,350px) ;
-    grid-template-rows: repeat(2, 350px);   
+    grid-template-columns: none ;
+    grid-auto-rows: repeat(3,25%) ;
+    max-width:400px;
 }
 `;
 export const Cards = styled.div`
@@ -77,7 +73,7 @@ padding-bottom:20px;
 &:hover {
     transform: scale(0.98);
     transition: .5s;
-    box-shadow: 0 10px 20px grey;
+    box-shadow: 0 10px 20px #FF005C;
     
   }
 `;
@@ -87,9 +83,19 @@ export const ImageContainer1 = styled.div`
     width: 300px;
     height: 200px;
     background-repeat: no-repeat;
+    
     @media screen and (max-width: 900px) {
+        width:450px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 export const ImageContainer2 = styled.div`
@@ -99,8 +105,17 @@ export const ImageContainer2 = styled.div`
     height: 200px;
     background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
+        width:450px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 export const ImageContainer3 = styled.div`
@@ -110,8 +125,17 @@ export const ImageContainer3 = styled.div`
     height: 200px;
     background-repeat: no-repeat;
     @media screen and (max-width: 900px) {
+        width:450px ;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
         width:350px ;
-        height: 350px;
+        height: 200px;
     }
 `;
 
@@ -126,6 +150,14 @@ font-size: 18px;
 line-height: 1.5;
 color: dark-grey;
 padding: 10px; 
+@media screen and (max-width: 900px) {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 `
 
 export const Text = styled.div`
@@ -139,6 +171,14 @@ font-size: 16px;
 line-height: 1.5;
 color: #666666;
 padding: 10px; 
+@media screen and (max-width: 900px) {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 `
 export const LinkText = styled.a`
 font-family: 'Work Sans', sans-serif;
