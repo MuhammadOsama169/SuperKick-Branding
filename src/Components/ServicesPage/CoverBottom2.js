@@ -1,5 +1,5 @@
 import React from 'react'
-import {CoverText2,InnerContainer,CoverText3, LeftContainer, RightContainer,HeaderText2,Container } from '../../Components/Styles/Page2/CoverBottom2.styled'
+import {CoverText2,InnerContainer,CoverText3, LeftContainer, RightContainer,HeaderText2,Container } from '../../Components/Styles/ServicesPage/CoverBottom2.styled'
 
 
 

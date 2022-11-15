@@ -1,4 +1,5 @@
 import React from 'react'
+import TopBanner from './ResourcePage/TopBanner'
 import Section1 from '../Components/ResourcePage/Section1'
 import Section2 from '../Components/ResourcePage/Section2'
 import Banner from './ResourcePage/Banner'
@@ -6,11 +7,12 @@ import Section3 from './ResourcePage/Section3'
 import Section4 from './ResourcePage/Section4'
 import Section5 from './ResourcePage/Section5'
 import Slider from './ResourcePage/Slider'
-
+import "swiper/css/bundle";
 
 export default function ResourcePage() {
   return (
     <>
+        <TopBanner></TopBanner>
         <Slider></Slider>
         <Section1></Section1>
         <Section2></Section2>

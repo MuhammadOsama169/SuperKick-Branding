@@ -6,7 +6,7 @@ export default function Section3() {
     <MainContainer>
         <InnerContainer>
             <MainHeader>Get branding tips and more delivered to your inbox.</MainHeader>
-            <Button to="contact">JOIN THE POSSE</Button>
+            <Button to="/contact">JOIN THE POSSE</Button>
         </InnerContainer>
     </MainContainer>
   )

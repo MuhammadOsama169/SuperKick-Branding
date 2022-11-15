@@ -1,6 +1,6 @@
 import React from 'react'
-import { LeftContainer, InnerContainer,MainContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from '../../Components/Styles/Page2/FirstMessage.styled'
-
+import { LeftContainer, InnerContainer,MainContainer,TextContainer, RightContainer,CoverText,MainHeader,ImageContainer,Button } from '../Styles/ServicesPage/FirstMessage.styled'
+import BasicModal from './BasicModal'
 
 export default function FirstMessage() {
   return (
@@ -31,9 +31,10 @@ export default function FirstMessage() {
       <RightContainer>
           <ImageContainer></ImageContainer>
           <Button>I’m interested in this service</Button>
+
       </RightContainer>
     </InnerContainer>
-
+    <BasicModal></BasicModal>
 
 
     </MainContainer>
