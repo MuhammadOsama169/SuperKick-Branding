@@ -1,14 +1,21 @@
-import React from 'react'
-import { MainContainer,InnerContainer, MainHeader,Text,Button } from '../Styles/Page3/Section4.styled'
+import React from 'react';
+import {
+  MainContainer,
+  InnerContainer,
+  MainHeader,
+  Text,
+  Button,
+} from '../Styles/Page3/Section4.styled';
 
-export default function Section4() {
+function Section4() {
   return (
     <MainContainer>
-        <InnerContainer>
-            <MainHeader>get unstuck</MainHeader>
-            <Text>Build a clearer brand message today.</Text>
-            <Button to="/contact">LET'S WORK TOGETHER</Button>
-        </InnerContainer>
+      <InnerContainer>
+        <MainHeader>get unstuck</MainHeader>
+        <Text>Build a clearer brand message today.</Text>
+        <Button to="/contact">LET`&apos;`S WORK TOGETHER</Button>
+      </InnerContainer>
     </MainContainer>
-  )
+  );
 }
+export default Section4;

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;600;700&display=swap');
@@ -20,6 +20,6 @@ const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
 }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

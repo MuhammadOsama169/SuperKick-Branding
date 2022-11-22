@@ -1,8 +1,13 @@
-import React from 'react'
-import { MainContainer,InnerContainer,BoxHeader,Button,ButtonContainer } from '../../Components/Styles/ServicesPage/BannerCallToAction.styled'
+import React from 'react';
+import {
+  MainContainer,
+  InnerContainer,
+  BoxHeader,
+  Button,
+  ButtonContainer,
+} from '../Styles/ServicesPage/BannerCallToAction.styled';
 
-
-export default function BannerCallToAction() {
+const BannerCallToAction = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -12,5 +17,6 @@ export default function BannerCallToAction() {
         </ButtonContainer>
       </InnerContainer>
     </MainContainer>
-  )
-}
+  );
+};
+export default BannerCallToAction;

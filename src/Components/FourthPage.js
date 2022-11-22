@@ -1,12 +1,13 @@
-import React from 'react'
-import CoverP4 from './Page4/CoverP4'
-import ContactForm from './Page4/ContactForm'
+import React from 'react';
+import CoverP4 from './Page4/CoverP4';
+import ContactForm from './Page4/ContactForm';
 
-export default function FourthPage() {
+function FourthPage() {
   return (
     <>
-    <CoverP4/>
-    <ContactForm/>
+      <CoverP4 />
+      <ContactForm />
     </>
-  )
+  );
 }
+export default FourthPage;

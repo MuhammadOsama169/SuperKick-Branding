@@ -1,17 +1,22 @@
-import React from 'react'
-import { MainContainer,TopContainer,ImageContainer,CoverText,HeaderText } from '../../Components/Styles/ServicesPage/Cover2.styled'
+import React from 'react';
+import {
+  MainContainer,
+  TopContainer,
+  ImageContainer,
+  CoverText,
+  HeaderText,
+} from '../Styles/ServicesPage/Cover2.styled';
 
-
-
-export default function Cover2() {
+function Cover2() {
   return (
     <MainContainer>
-        <ImageContainer>
-            <TopContainer>
-                <HeaderText>Superkick services</HeaderText>
-                <CoverText>Plant your flag. Lead your industry.</CoverText>
-            </TopContainer>
-        </ImageContainer>
+      <ImageContainer>
+        <TopContainer>
+          <HeaderText>Superkick services</HeaderText>
+          <CoverText>Plant your flag. Lead your industry.</CoverText>
+        </TopContainer>
+      </ImageContainer>
     </MainContainer>
-  )
+  );
 }
+export default Cover2;
