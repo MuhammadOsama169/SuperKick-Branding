@@ -65,4 +65,9 @@ function BasicModal({ openModal, closeModal }) {
     </div>
   );
 }
+BasicModal.propTypes = {
+  openModal: PropTypes.bool,
+  closeModal: PropTypes.bool,
+};
+
 export default BasicModal;

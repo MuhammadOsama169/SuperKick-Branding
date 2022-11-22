@@ -23,7 +23,7 @@ function Footer() {
         <RContainer>
           <NavbarLinkExtended to="/who"> WHO WE ARE </NavbarLinkExtended>
           <NavbarLinkExtended to="/services"> SERVICES </NavbarLinkExtended>
-          <NavbarLinkExtended to="/linkedin"> RESOURCES </NavbarLinkExtended>
+          <NavbarLinkExtended to="/resources"> RESOURCES </NavbarLinkExtended>
           <NavbarLinkExtended to="/contact"> LETS TALK </NavbarLinkExtended>
         </RContainer>
         <LContainer>

@@ -20,14 +20,15 @@ export const TopContainer = styled.div`
   padding: 2%;
 
   @media screen and (max-width: 900px) {
+    position: relative;
+    left: auto;
+    top: 0;
     display: flex;
     flex-direction: column;
-    left: 80px;
-    top: 80px;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   @media screen and (max-width: 490px) {
-    left: auto;
-    top: 10%;
   }
 `;
 export const ImageContainer = styled.div`
@@ -42,19 +43,19 @@ export const ImageContainer = styled.div`
     background-size: auto 80%;
     height: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   @media screen and (max-width: 650px) {
     background-size: auto 50%;
     height: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   @media screen and (max-width: 500px) {
     background-size: auto 50%;
     height: auto;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 `;
 
