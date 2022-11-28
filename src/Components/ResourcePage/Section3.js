@@ -6,7 +6,7 @@ import {
   Button,
 } from '../Styles/ResourcePage/Section3.styled';
 
-function Section3() {
+export const Section3 = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -17,5 +17,4 @@ function Section3() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Section3;
+};

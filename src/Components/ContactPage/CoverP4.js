@@ -4,17 +4,18 @@ import {
   ImageContainer,
   TopContainer,
   HeaderText,
-} from '../Styles/Page3/CoverP3.styled';
+  Text,
+} from '../Styles/ContactPage/CoverP4.styled';
 
-function CoverP3() {
+export const CoverP4 = () => {
   return (
     <MainContainer>
       <ImageContainer>
         <TopContainer>
-          <HeaderText>Origin Story</HeaderText>
+          <HeaderText>HIT US UP</HeaderText>
+          <Text>How can we give your brand a boost?</Text>
         </TopContainer>
       </ImageContainer>
     </MainContainer>
   );
-}
-export default CoverP3;
+};

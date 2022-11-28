@@ -6,7 +6,7 @@ import {
   Button,
 } from '../Styles/HomePage/Section3.styled';
 
-function Section3() {
+export const Section3 = () => {
   return (
     <MainContainer>
       <MainHeader>get unstuck</MainHeader>
@@ -14,5 +14,4 @@ function Section3() {
       <Button to="contact">LET&apos;S WORK TOGETHER</Button>
     </MainContainer>
   );
-}
-export default Section3;
+};

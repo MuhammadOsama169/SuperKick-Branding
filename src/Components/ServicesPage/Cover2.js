@@ -7,7 +7,7 @@ import {
   HeaderText,
 } from '../Styles/ServicesPage/Cover2.styled';
 
-function Cover2() {
+export const Cover2 = () => {
   return (
     <MainContainer>
       <ImageContainer>
@@ -18,5 +18,4 @@ function Cover2() {
       </ImageContainer>
     </MainContainer>
   );
-}
-export default Cover2;
+};

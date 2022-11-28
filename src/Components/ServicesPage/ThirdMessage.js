@@ -10,9 +10,9 @@ import {
   ImageContainer,
   Button,
 } from '../Styles/ServicesPage/ThirdMessage.styled';
-import BasicModal from './BasicModal';
+import { BasicModal } from './BasicModal';
 
-function ThirdMessage() {
+export const ThirdMessage = () => {
   const [isShown, setIsShown] = useState(false);
   const handleClick = (event) => {
     setIsShown((current) => !current);
@@ -53,5 +53,4 @@ function ThirdMessage() {
       </MainContainer>
     </>
   );
-}
-export default ThirdMessage;
+};

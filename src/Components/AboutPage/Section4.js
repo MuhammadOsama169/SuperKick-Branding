@@ -5,9 +5,9 @@ import {
   MainHeader,
   Text,
   Button,
-} from '../Styles/Page3/Section4.styled';
+} from '../Styles/AboutPage/Section4.styled';
 
-function Section4() {
+export const Section4 = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -17,5 +17,4 @@ function Section4() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Section4;
+};

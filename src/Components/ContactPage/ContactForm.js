@@ -1,11 +1,10 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { ThemeProvider, createTheme } from '@material-ui/core';
+import { ThemeProvider, createTheme, Container, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid } from '@material-ui/core';
-import Textfield from './FormsUI/TextField';
-import Button from './FormsUI/Button';
+import { TextfieldWrapper } from './FormsUI/TextField';
+import { ButtonWrapper } from './FormsUI/Button';
 
 const theme = createTheme({
   typography: {
@@ -51,7 +50,7 @@ const VALIDATION = Yup.object().shape({
   message: Yup.string().min(3, 'Message must be at least 3 words long'),
 });
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const classes = useStyles();
 
   return (
@@ -72,7 +71,7 @@ const ContactForm = () => {
                 <Form>
                   <Grid container spacing={4}>
                     <Grid item md={6} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="name"
                         label="NAME"
@@ -80,7 +79,7 @@ const ContactForm = () => {
                     </Grid>
 
                     <Grid item md={6} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="email"
                         label="EMAIL ADDRESS"
@@ -88,7 +87,7 @@ const ContactForm = () => {
                     </Grid>
 
                     <Grid item md={6} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="business"
                         label="BUSINESS ADDRESS"
@@ -96,7 +95,7 @@ const ContactForm = () => {
                     </Grid>
 
                     <Grid item md={6} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="phone"
                         label="PHONE"
@@ -104,7 +103,7 @@ const ContactForm = () => {
                     </Grid>
 
                     <Grid item md={12} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="website"
                         label="WEBSITE"
@@ -112,7 +111,7 @@ const ContactForm = () => {
                     </Grid>
 
                     <Grid item md={12} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="message"
                         label="MESSAGE"
@@ -123,7 +122,7 @@ const ContactForm = () => {
 
                     <Grid item md={3} xs={12}>
                       {/* Button sizing in FormsUI/Button.js */}
-                      <Button>SUBMIT</Button>
+                      <ButtonWrapper>SUBMIT</ButtonWrapper>
                     </Grid>
                   </Grid>
                 </Form>
@@ -135,5 +134,3 @@ const ContactForm = () => {
     </ThemeProvider>
   );
 };
-
-export default ContactForm;

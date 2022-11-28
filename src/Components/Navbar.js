@@ -14,7 +14,7 @@ import {
 
 import LogoImg from '../assets/images/Logo.png';
 
-function Navbar() {
+export const Navbar = () => {
   const [extendNavbar, setExtendNavbar] = useState(false);
 
   const navigate = useNavigate();
@@ -56,6 +56,4 @@ function Navbar() {
       </NavbarContainer>
     </>
   );
-}
-
-export default Navbar;
+};

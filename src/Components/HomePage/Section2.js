@@ -14,9 +14,12 @@ import {
   InnerContainer,
   ImageContainer,
   ImageContainer3,
+  InnerContainerB,
+  InnerContainerWS,
+  InnerContainerMS,
 } from '../Styles/HomePage/Section2.styled';
 
-function Section2() {
+export const Section2 = () => {
   const navigate = useNavigate();
   const navigateToContacts = () => {
     navigate('/contact');
@@ -43,18 +46,18 @@ function Section2() {
               <CoverText>Click on a service to learn more.</CoverText>
             </CardRight>
           </InnerContainer>
-          <InnerContainer>
+          <InnerContainerB to="/services">
             <BoxHeader>brand diagnostic</BoxHeader>
             <ImageContainer></ImageContainer>
-          </InnerContainer>
-          <InnerContainer>
+          </InnerContainerB>
+          <InnerContainerWS to="/services">
             <BoxHeader>messaging Workshop</BoxHeader>
             <ImageContainer2></ImageContainer2>
-          </InnerContainer>
-          <InnerContainer>
+          </InnerContainerWS>
+          <InnerContainerMS to="/services">
             <BoxHeader2>monthly strategy sessions</BoxHeader2>
             <ImageContainer3></ImageContainer3>
-          </InnerContainer>
+          </InnerContainerMS>
         </TopContainer>
         <EndContainer>
           <Button onClick={navigateToContacts}>LET&apos;S WORK TOGETHER</Button>
@@ -62,5 +65,4 @@ function Section2() {
       </MainContainer>
     </>
   );
-}
-export default Section2;
+};

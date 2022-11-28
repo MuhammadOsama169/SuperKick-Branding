@@ -10,7 +10,7 @@ import {
 } from '../Styles/HomePage/Cover.styled';
 import Img from '../../assets/images/Blend 1.png';
 
-function Cover() {
+export const Cover = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -28,5 +28,4 @@ function Cover() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Cover;
+};

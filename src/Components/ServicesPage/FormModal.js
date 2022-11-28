@@ -1,11 +1,10 @@
 import React from 'react';
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
-import { ThemeProvider, createTheme } from '@material-ui/core';
+import { ThemeProvider, createTheme, Container, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { Container, Grid } from '@material-ui/core';
-import Textfield from './FormsUI/TextField';
-import Button from './FormsUI/Button';
+import { TextfieldWrapper } from './FormsUI/TextfieldWrapper';
+import { ButtonWrapper } from './FormsUI/ButtonWrapper';
 
 const theme = createTheme({
   typography: {
@@ -46,7 +45,7 @@ const VALIDATION = Yup.object().shape({
   website: Yup.string().min(3, 'Username must be at least 3 characters long'),
 });
 
-const FormModal = () => {
+export const FormModal = () => {
   const classes = useStyles();
 
   return (
@@ -67,7 +66,7 @@ const FormModal = () => {
                 <Form>
                   <Grid container spacing={4}>
                     <Grid item xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="name"
                         label="NAME"
@@ -75,7 +74,7 @@ const FormModal = () => {
                     </Grid>
 
                     <Grid item xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="email"
                         label="EMAIL ADDRESS"
@@ -83,7 +82,7 @@ const FormModal = () => {
                     </Grid>
 
                     <Grid item md={12} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="business"
                         label="BUSINESS NAME"
@@ -91,7 +90,7 @@ const FormModal = () => {
                     </Grid>
 
                     <Grid item md={12} xs={12}>
-                      <Textfield
+                      <TextfieldWrapper
                         className={classes.textBackground}
                         name="website"
                         label="BUSINESS WEBSITE"
@@ -100,7 +99,7 @@ const FormModal = () => {
 
                     <Grid item md={3} xs={12}>
                       {/* Button sizing in FormsUI/Button.js */}
-                      <Button>SUBMIT</Button>
+                      <ButtonWrapper>SUBMIT</ButtonWrapper>
                     </Grid>
                   </Grid>
                 </Form>
@@ -112,5 +111,3 @@ const FormModal = () => {
     </ThemeProvider>
   );
 };
-
-export default FormModal;

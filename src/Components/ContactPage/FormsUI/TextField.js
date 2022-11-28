@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { TextField } from '@material-ui/core';
 import { useField } from 'formik';
 
-const TextfieldWrapper = ({ name, ...otherProps }) => {
+export const TextfieldWrapper = ({ name, ...otherProps }) => {
   const [field, mata] = useField(name);
 
   const configTextField = {
@@ -19,5 +20,6 @@ const TextfieldWrapper = ({ name, ...otherProps }) => {
 
   return <TextField {...configTextField} />;
 };
-
-export default TextfieldWrapper;
+TextfieldWrapper.propTypes = {
+  name: PropTypes.node.isRequired,
+};

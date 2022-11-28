@@ -4,9 +4,9 @@ import {
   InnerContainer,
   Text,
   Button,
-} from '../Styles/Page3/SectionBreak3.styled';
+} from '../Styles/AboutPage/SectionBreak3.styled';
 
-function SectionBreak3() {
+export const SectionBreak3 = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -20,5 +20,4 @@ function SectionBreak3() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default SectionBreak3;
+};

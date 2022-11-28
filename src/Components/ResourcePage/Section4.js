@@ -13,7 +13,7 @@ import {
   LinkText,
 } from '../Styles/ResourcePage/Section4.styled';
 
-function Section4() {
+export const Section4 = () => {
   return (
     <MainContainer>
       <Header>Book Reviews</Header>
@@ -58,5 +58,4 @@ function Section4() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Section4;
+};

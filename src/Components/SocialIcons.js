@@ -1,36 +1,31 @@
+import React from 'react';
 import {
-  FaTwitter,
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaYoutube,
-} from 'react-icons/fa';
-import { StyledSocialIcons } from './Styles/SocialIcons.styled';
+  StyledSocialIcons,
+  InstagramIcon,
+  TwitterIcon,
+  YoutubeIcon,
+  LinkedinIcon,
+  IconWrapperLinkdin,
+  IconWrapperTwitter,
+  IconWrapperInsta,
+  IconWrapperYoutube,
+} from './Styles/SocialIcons.styled';
 
-function SocialIcons() {
+export const SocialIcons = () => {
   return (
     <StyledSocialIcons>
-      <li>
-        <a href="https://mobile.twitter.com/SuperkickBrand">
-          <FaTwitter />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/channel/UCmWU3oIyaIBlwjD5HAwqkTw">
-          <FaYoutube />
-        </a>
-      </li>
-      <li>
-        <a href="https://facebook.com">
-          <FaFacebook />
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/company/superkickbrand/">
-          <FaLinkedin />
-        </a>
-      </li>
+      <IconWrapperInsta href="https://www.instagram.com/brandoutlaw/">
+        <InstagramIcon></InstagramIcon>
+      </IconWrapperInsta>
+      <IconWrapperLinkdin href="https://www.linkedin.com/company/superkickbrand/">
+        <LinkedinIcon></LinkedinIcon>
+      </IconWrapperLinkdin>
+      <IconWrapperTwitter href="https://mobile.twitter.com/SuperkickBrand">
+        <TwitterIcon></TwitterIcon>
+      </IconWrapperTwitter>
+      <IconWrapperYoutube href="https://www.youtube.com/channel/UCmWU3oIyaIBlwjD5HAwqkTw">
+        <YoutubeIcon></YoutubeIcon>
+      </IconWrapperYoutube>
     </StyledSocialIcons>
   );
-}
-export default SocialIcons;
+};

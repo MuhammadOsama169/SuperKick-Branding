@@ -8,7 +8,7 @@ import {
   BottomContainer,
 } from '../Styles/ResourcePage/TopBanner.styled';
 
-function TopBanner() {
+export const TopBanner = () => {
   return (
     <>
       <MainContainer>
@@ -25,6 +25,4 @@ function TopBanner() {
       </BottomContainer>
     </>
   );
-}
-
-export default TopBanner;
+};

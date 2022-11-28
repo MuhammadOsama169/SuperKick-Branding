@@ -11,9 +11,9 @@ import {
   BoldTextPink,
   BoldText,
   Button,
-} from '../Styles/Page3/Section1.styled';
+} from '../Styles/AboutPage/Section1.styled';
 
-function Section1() {
+export const Section1 = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -52,5 +52,4 @@ function Section1() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Section1;
+};

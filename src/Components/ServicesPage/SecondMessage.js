@@ -10,9 +10,9 @@ import {
   ImageContainer,
   Button,
 } from '../Styles/ServicesPage/SecondMessage.styled';
-import BasicModal from './BasicModal';
+import { BasicModal } from './BasicModal';
 
-function SecondMessage() {
+export const SecondMessage = () => {
   const [isShown, setIsShown] = useState(false);
   const handleClick = (event) => {
     setIsShown((current) => !current);
@@ -64,5 +64,4 @@ function SecondMessage() {
       </MainContainer>
     </>
   );
-}
-export default SecondMessage;
+};

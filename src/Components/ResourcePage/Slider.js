@@ -13,7 +13,7 @@ import Img5 from '../../assets/images/Video_Ads_Hows_and_Whys-980x513.png';
 import Img6 from '../../assets/images/Marketing_Recession-1-980x513.png';
 import './slider.css';
 
-function Slider() {
+export const Slider = () => {
   return (
     <>
       <div className="margin-gap">
@@ -53,5 +53,4 @@ function Slider() {
       </div>
     </>
   );
-}
-export default Slider;
+};

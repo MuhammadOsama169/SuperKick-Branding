@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Button } from '@material-ui/core';
 import { useFormikContext } from 'formik';
 
-const ButtonWrapper = ({ children, ...otherProps }) => {
+export const ButtonWrapper = ({ children, ...otherProps }) => {
   const { submitForm } = useFormikContext();
 
   const handleSubmit = () => {
@@ -20,5 +21,6 @@ const ButtonWrapper = ({ children, ...otherProps }) => {
     </Button>
   );
 };
-
-export default ButtonWrapper;
+ButtonWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};

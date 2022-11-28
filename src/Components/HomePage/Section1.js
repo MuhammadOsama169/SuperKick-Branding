@@ -9,7 +9,7 @@ import {
   ImageContainer,
 } from '../Styles/HomePage/Section1.styled';
 
-function Section1() {
+export const Section1 = () => {
   return (
     <>
       <MainContainer>
@@ -19,8 +19,9 @@ function Section1() {
             <CoverText>
               You have a solid business with a killer product. But that
               won&apos;t matter if your brand messaging confuses customers or
-              blends in with competitors. <br></br>
-              <br></br>
+              blends in with competitors.
+            </CoverText>
+            <CoverText>
               Superkick helps you develop a clear message about what your brand
               does and who it&apos;s for. Messaging that stands out will take
               you from the middle of the pack to the top of your industry.
@@ -33,5 +34,4 @@ function Section1() {
       </MainContainer>
     </>
   );
-}
-export default Section1;
+};

@@ -28,11 +28,8 @@ export const InnerContainer = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 1024px;
-  padding-top: 3%;
-  padding-bottom: 5%;
+  padding: 25px 0px 25px 0px;
   @media screen and (max-width: 900px) {
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
     display: flex;
     flex-direction: column;
     padding-left: 0px;
@@ -54,6 +51,7 @@ export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 150px;
+  line-height: 0.1em;
   @media screen and (max-width: 900px) {
     display: flex;
     flex-direction: column;
@@ -80,13 +78,14 @@ export const RightContainer = styled.div`
   }
 `;
 
-export const CoverText = styled.div`
+export const CoverText = styled.p`
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
     font-style: regular;
     font-weight: 10px;
-    line-height: 28.15px;
+    line-height: 1.4em;
     color: black;
+
     @media screen and (max-width: 900px) {
         padding: 10px;
         font-size: 22px;

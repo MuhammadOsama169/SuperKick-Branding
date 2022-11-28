@@ -9,7 +9,7 @@ import {
   Container,
 } from '../Styles/ServicesPage/CoverBottom2.styled';
 
-function CoverBottom2() {
+export const CoverBottom2 = () => {
   return (
     <>
       <Container>
@@ -31,5 +31,4 @@ function CoverBottom2() {
       </Container>
     </>
   );
-}
-export default CoverBottom2;
+};

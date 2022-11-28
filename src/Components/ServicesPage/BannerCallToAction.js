@@ -7,7 +7,7 @@ import {
   ButtonContainer,
 } from '../Styles/ServicesPage/BannerCallToAction.styled';
 
-const BannerCallToAction = () => {
+export const BannerCallToAction = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -19,4 +19,3 @@ const BannerCallToAction = () => {
     </MainContainer>
   );
 };
-export default BannerCallToAction;

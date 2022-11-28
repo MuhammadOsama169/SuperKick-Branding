@@ -13,7 +13,7 @@ import {
   LinkText,
 } from '../Styles/ResourcePage/Section1.styled';
 
-function Section1() {
+export const Section1 = () => {
   return (
     <MainContainer>
       <Header>Branding</Header>
@@ -65,5 +65,4 @@ function Section1() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Section1;
+};

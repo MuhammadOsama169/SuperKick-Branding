@@ -53,7 +53,7 @@ export const UnderText = styled.span`
   font-size: 16px;
   font-style: regular;
   font-weight: 400;
-  line-height: 28.15px;
+  line-height: 0.6em;
   display: flex;
   flex-direction: column;
   justify-content: center;

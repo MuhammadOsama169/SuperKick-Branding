@@ -1,7 +1,7 @@
 import React from 'react';
 import { OuterContainer, Section } from '../Styles/HomePage/Section1.styled';
 
-function SectionBreak() {
+export const SectionBreak = () => {
   return (
     <>
       <OuterContainer>
@@ -9,5 +9,4 @@ function SectionBreak() {
       </OuterContainer>
     </>
   );
-}
-export default SectionBreak;
+};

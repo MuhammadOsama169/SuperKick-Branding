@@ -6,7 +6,7 @@ import {
   StyledFooter,
 } from '../Styles/ResourcePage/Banner.styled';
 
-function Banner() {
+export const Banner = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -28,5 +28,4 @@ function Banner() {
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Banner;
+};

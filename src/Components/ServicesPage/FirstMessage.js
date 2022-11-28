@@ -10,9 +10,9 @@ import {
   ImageContainer,
   Button,
 } from '../Styles/ServicesPage/FirstMessage.styled';
-import BasicModal from './BasicModal';
+import { BasicModal } from './BasicModal';
 
-function FirstMessage() {
+export const FirstMessage = () => {
   const [isShown, setIsShown] = useState(false);
   const handleClick = (event) => {
     setIsShown((current) => !current);
@@ -63,6 +63,4 @@ function FirstMessage() {
       </MainContainer>
     </>
   );
-}
-
-export default FirstMessage;
+};

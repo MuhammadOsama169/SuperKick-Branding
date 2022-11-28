@@ -10,7 +10,7 @@ import {
   LogoImageContainer,
 } from '../Styles/HomePage/Banner.styled';
 
-function Banner() {
+export const Banner = () => {
   return (
     <MainContainer>
       <InnerContainer>
@@ -22,11 +22,11 @@ function Banner() {
             Brand Outlaw content.
           </CoverText>
           <Button to="/contact">
-            <LogoImageContainer></LogoImageContainer> Check out Brand Outlaw
+            <LogoImageContainer></LogoImageContainer>
+            Check out Brand Outlaw
           </Button>
         </RightContainer>
       </InnerContainer>
     </MainContainer>
   );
-}
-export default Banner;
+};

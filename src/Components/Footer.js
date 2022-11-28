@@ -1,5 +1,5 @@
 import React from 'react';
-import SocialIcons from './SocialIcons';
+import { SocialIcons } from './SocialIcons';
 import {
   Container,
   MainContainer,
@@ -12,7 +12,7 @@ import {
   Liink,
 } from './Styles/Footer.styled';
 
-function Footer() {
+export const Footer = () => {
   return (
     <MainContainer>
       <Container>
@@ -28,16 +28,13 @@ function Footer() {
         </RContainer>
         <LContainer>
           <NavbarLinkExtended to="https://thebrandoutlaw.com/videos/">
-            {' '}
-            VIDEOS{' '}
+            VIDEOS
           </NavbarLinkExtended>
           <NavbarLinkExtended to="https://thebrandoutlaw.com/podcast/">
-            {' '}
-            PODCAST{' '}
+            PODCAST
           </NavbarLinkExtended>
           <NavbarLinkExtended to="https://bookshop.org/shop/superkickbrand">
-            {' '}
-            BOOKSHOP{' '}
+            BOOKSHOP
           </NavbarLinkExtended>
         </LContainer>
       </VisibleContainer>
@@ -47,19 +44,15 @@ function Footer() {
         <NavbarLinkExtended to="/services"> SERVICES </NavbarLinkExtended>
         <NavbarLinkExtended to="/contact"> LETS TALK </NavbarLinkExtended>
         <NavbarLinkExtended to="https://thebrandoutlaw.com/videos/">
-          {' '}
-          VIDEOS{' '}
+          VIDEOS
         </NavbarLinkExtended>
         <NavbarLinkExtended to="https://thebrandoutlaw.com/podcast/">
-          {' '}
-          PODCAST{' '}
+          PODCAST
         </NavbarLinkExtended>
         <NavbarLinkExtended to="https://bookshop.org/shop/superkickbrand">
-          {' '}
-          BOOKSHOP{' '}
+          BOOKSHOP
         </NavbarLinkExtended>
       </OuterContainer>
     </MainContainer>
   );
-}
-export default Footer;
+};

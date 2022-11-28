@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import PropTypes from 'prop-types';
-import FormModal from './FormModal';
+import { FormModal } from './FormModal';
 
 const style = {
   position: 'absolute',
@@ -37,7 +37,7 @@ const style3 = {
   fontWeight: '400',
   fontSize: '16px',
 };
-function BasicModal({ openModal, closeModal }) {
+export const BasicModal = ({ openModal, closeModal }) => {
   return (
     <div>
       <Modal
@@ -64,10 +64,8 @@ function BasicModal({ openModal, closeModal }) {
       </Modal>
     </div>
   );
-}
+};
 BasicModal.propTypes = {
   openModal: PropTypes.bool,
   closeModal: PropTypes.bool,
 };
-
-export default BasicModal;

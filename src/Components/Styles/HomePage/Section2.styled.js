@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Img1 from '../../../assets/images/Mask-group.png';
 import Img2 from '../../../assets/images/Group-4.png';
 import Img3 from '../../../assets/images/Group-7.png';
@@ -97,8 +98,44 @@ export const InnerContainer = styled.div`
     transform: scale(0.98);
   }
 `;
+export const InnerContainerB = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+`;
+export const InnerContainerWS = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+`;
+export const InnerContainerMS = styled(Link)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+    transform: scale(0.98);
+  }
+`;
 
-export const CoverText = styled.div`
+export const CoverText = styled.p`
   font-family: 'Work Sans', sans-serif;
   font-size: 24px;
   font-style: regular;
@@ -111,10 +148,11 @@ export const CoverText = styled.div`
     font-style: regular;
     font-weight: 200;
     line-height: 28.15px;
-    padding-top: 1%;
+    padding-top: 0px;
+    margin: 0px;
   }
 `;
-export const MainHeader = styled.div`
+export const MainHeader = styled.p`
   font-family: 'Work Sans';
   font-style: italic;
   font-weight: 700;
@@ -126,6 +164,7 @@ export const MainHeader = styled.div`
     font-style: regular;
     font-weight: 600;
     line-height: 28.15px;
+    margin: 0px 0px 10px 0px;
   }
 `;
 export const BoxHeader = styled.div`
