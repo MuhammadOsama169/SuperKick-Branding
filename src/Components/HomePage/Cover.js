@@ -8,7 +8,7 @@ import {
   CoverText,
   ImageContainer,
 } from '../Styles/HomePage/Cover.styled';
-import Img from '../../assets/images/Blend 1.png';
+import Img from '../../assets/images/logo-blend-in.png';
 
 export const Cover = () => {
   return (

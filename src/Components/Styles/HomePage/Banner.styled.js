@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Img1 from '../../../assets/images/Mascot02.png';
-import Img2 from '../../../assets/images/Lockup_Black.png';
+import Img1 from '../../../assets/images/mascot.png';
+import Img2 from '../../../assets/images/lockup-black.png';
 
 export const MainContainer = styled.div`
   width: 100%;

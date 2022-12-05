@@ -5,12 +5,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
-import Img1 from '../../assets/images/Draplin-1-980x513.png';
-import Img2 from '../../assets/images/image1-480x270.png';
-import Img3 from '../../assets/images/Kleon-1-980x513.png';
-import Img4 from '../../assets/images/What_Great_Brands_Do.png';
-import Img5 from '../../assets/images/Video_Ads_Hows_and_Whys-980x513.png';
-import Img6 from '../../assets/images/Marketing_Recession-1-980x513.png';
+import Img1 from '../../assets/images/draplin-solo-photo.png';
+import Img2 from '../../assets/images/nonprofit_image.png';
+import Img3 from '../../assets/images/what-great-brands-do.png';
+import Img4 from '../../assets/images/steal-like-an-artist.png';
+import Img5 from '../../assets/images/the-future-is-analog.png';
+import Img6 from '../../assets/images/marketing_recession.png';
 import './slider.css';
 
 export const Slider = () => {

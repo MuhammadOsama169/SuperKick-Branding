@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Img1 from '../../../assets/images/image1-480x270.png';
-import Img2 from '../../../assets/images/Kleon-1-980x513.png';
-import Img3 from '../../../assets/images/BrandOutlaw_AtomicHabits-1-480x270.png';
+import Img1 from '../../../assets/images/bran-outlaw-bing.png';
+import Img2 from '../../../assets/images/logo-cost.png';
+import Img3 from '../../../assets/images/brand-outlaw_atomic-habits.png';
 
 export const MainContainer = styled.section`
   width: 100%;

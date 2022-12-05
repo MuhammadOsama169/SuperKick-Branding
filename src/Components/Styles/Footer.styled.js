@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Img1 from '../../assets/images/Superkick_horiz_04.png';
+import Img1 from '../../assets/images/superkick-logo-horiz.png';
 
 export const MainContainer = styled.div`
   display: flex;

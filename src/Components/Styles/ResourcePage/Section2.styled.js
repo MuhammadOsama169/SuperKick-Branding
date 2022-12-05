@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Img1 from '../../../assets/images/BrandOutlaw_Bing-980x551.png';
-import Img2 from '../../../assets/images/Marketing_Recession-1-980x513.png';
-import Img3 from '../../../assets/images/Video_Ads_Hows_and_Whys-980x513.png';
+import Img1 from '../../../assets/images/bran-outlaw-bing.png';
+import Img2 from '../../../assets/images/brand-outlaw_atomic-habits.png';
+import Img3 from '../../../assets/images/video-ads-hows-and-whys.png';
 
 export const MainContainer = styled.section`
   width: 100%;

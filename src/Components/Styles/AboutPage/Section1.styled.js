@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import ImgCover from '../../../assets/images/Nick-and-Matt.jpeg';
+import ImgCover from '../../../assets/images/nick-and-matt.jpeg';
 
 export const MainContainer = styled.section`
   width: 100%;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Img1 from '../../../assets/images/BA_Nonprofit_cover.png';
-import Img2 from '../../../assets/images/BrandOutlaw_Discount.png';
-import Img3 from '../../../assets/images/What_Great_Brands_Do.png';
+import Img1 from '../../../assets/images/nonprofit_image.png';
+import Img2 from '../../../assets/images/brand-outlaw_discount.png';
+import Img3 from '../../../assets/images/what-great-brands-do.png';
 
 export const MainContainer = styled.section`
   width: 100%;

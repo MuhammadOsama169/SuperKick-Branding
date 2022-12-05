@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImgCover from '../../../assets/images/Dude-1.png';
+import ImgCover from '../../../assets/images/dude-1.png';
 
 export const MainContainer = styled.div`
   display: flex;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../../assets/images/team-photo_1_478x318.png';
+import img from '../../../assets/images/team-photo.png';
 
 export const MainContainer = styled.section`
     width:100%;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Img1 from '../../../assets/images/Draplin-1-980x513.png';
-import Img2 from '../../../assets/images/Logo_Cost-1.png';
-import Img3 from '../../../assets/images/image2-980x653.jpg';
+import Img1 from '../../../assets/images/draplin-solo-photo.png';
+import Img2 from '../../../assets/images/logo-cost.png';
+import Img3 from '../../../assets/images/logo-design.jpg';
 
 export const MainContainer = styled.section`
   width: 100%;

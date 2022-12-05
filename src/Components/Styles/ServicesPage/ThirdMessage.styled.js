@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import img from '../../../assets/images/superkick-team-brainstorming-1.png';
+import img from '../../../assets/images/superkick-team-brainstorming.png';
 
 export const MainContainer = styled.section`
   width: 100%;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import ImgCover from '../../../assets/images/team-photo5.png';
+import ImgCover from '../../../assets/images/team-owner-photo.png';
 
 export const MainContainer = styled.div`
   background-color: #ff005c;
