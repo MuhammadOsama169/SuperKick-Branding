@@ -1,0 +1,77 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": ["airbnb"],
+  "plugins": ["react", "jsx-a11y"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "arrow-body-style": [0, "as-needed"],
+    "arrow-parens": [2, "always"],
+    "comma-dangle": [2, "always-multiline"],
+    "import/first": 2,
+    "import/newline-after-import": 2,
+    "import/no-extraneous-dependencies": 2,
+    "import/no-unresolved": 2,
+    "import/no-default-export": 2,
+    "import/prefer-default-export": 0,
+    "react/jsx-closing-tag-location": 1,
+    "react/forbid-prop-types": 0,
+    "react/jsx-first-prop-new-line": [2, "multiline"],
+    "react/jsx-filename-extension": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/require-default-props": 0,
+    "react/require-extension": 0,
+    "react/self-closing-comp": 0,
+    "react/sort-comp": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-curly-newline": 0,
+    "react/jsx-no-useless-fragment": 0,
+    "react/function-component-definition": 0,
+    "prefer-destructuring": [
+      2,
+      {
+        "object": true,
+        "array": false
+      }
+    ],
+    "implicit-arrow-linebreak": 0,
+    "operator-linebreak": 0,
+    "linebreak-style": 0,
+    "no-underscore-dangle": 0,
+    "indent": [
+      0,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": 0,
+    "no-confusing-arrow": 0,
+    "function-paren-newline": 0,
+    "object-curly-newline": 0,
+    "no-unused-vars": 0,
+    "no-console": 0,
+    "no-use-before-define": 0,
+    "no-case-declarations": 1,
+    "prefer-template": 2
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src"]
+      }
+    }
+  }
+}
