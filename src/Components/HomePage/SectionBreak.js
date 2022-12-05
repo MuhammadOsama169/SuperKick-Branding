@@ -1,12 +1,12 @@
-import React from 'react'
-import { OuterContainer,Section } from '../../Components/Styles/HomePage/Section1.styled'
+import React from 'react';
+import { OuterContainer, Section } from '../Styles/HomePage/Section1.styled';
 
-export default function SectionBreak() {
+export const SectionBreak = () => {
   return (
     <>
-    <OuterContainer>
+      <OuterContainer>
         <Section>HOW WE GET YOU THERE</Section>
-    </OuterContainer>
+      </OuterContainer>
     </>
-  )
-}
+  );
+};

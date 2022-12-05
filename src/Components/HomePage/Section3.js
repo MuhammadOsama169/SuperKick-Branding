@@ -1,12 +1,17 @@
-import React from 'react'
-import { MainContainer, MainHeader,Text,Button } from '../../Components/Styles/HomePage/Section3.styled'
+import React from 'react';
+import {
+  MainContainer,
+  MainHeader,
+  Text,
+  Button,
+} from '../Styles/HomePage/Section3.styled';
 
-export default function Section3() {
+export const Section3 = () => {
   return (
     <MainContainer>
-        <MainHeader>get unstuck</MainHeader>
-        <Text>Build a clearer brand message today.</Text>
-        <Button to="contact">LET'S WORK TOGETHER</Button>
+      <MainHeader>get unstuck</MainHeader>
+      <Text>Build a clearer brand message today.</Text>
+      <Button to="contact">LET&apos;S WORK TOGETHER</Button>
     </MainContainer>
-  )
-}
+  );
+};
