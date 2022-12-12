@@ -7,20 +7,21 @@ import { Section3 } from './ResourcePage/Section3';
 import { Section4 } from './ResourcePage/Section4';
 import { Section5 } from './ResourcePage/Section5';
 import { Slider } from './ResourcePage/Slider';
-import 'swiper/css/bundle';
+// eslint-disable-next-line import/no-unresolved
+import 'swiper/css/bundle'; // Following official docs
 
 export const ResourcePage = () => {
   return (
     <>
-      <TopBanner></TopBanner>
-      <Slider></Slider>
-      <Section1></Section1>
-      <Section2></Section2>
-      <Section3></Section3>
-      <Section4></Section4>
-      <Section5></Section5>
-      <Banner></Banner>
-      <Section3></Section3>
+      <TopBanner />
+      <Slider />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Banner />
+      <Section3 />
     </>
   );
 };

@@ -3,7 +3,9 @@ import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import { ThemeProvider, createTheme, Container, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+// eslint-disable-next-line import/named
 import { TextfieldWrapper } from './FormsUI/TextField';
+// eslint-disable-next-line import/named
 import { ButtonWrapper } from './FormsUI/Button';
 
 const theme = createTheme({
@@ -18,17 +20,17 @@ const theme = createTheme({
   },
 });
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((thm) => ({
   formWrapper: {
-    marginTop: theme.spacing(5),
-    marginBottom: theme.spacing(8),
+    marginTop: thm.spacing(5),
+    marginBottom: thm.spacing(8),
   },
   textBackground: {
     backgroundColor: '#eee',
   },
 }));
 
-const INITIAL_FORM_STATE = {
+const initialFormState = {
   email: '',
   name: '',
   business: '',
@@ -60,9 +62,7 @@ export const ContactForm = () => {
           <Container maxWidth="md">
             <div className={classes.formWrapper}>
               <Formik
-                initialValues={{
-                  ...INITIAL_FORM_STATE,
-                }}
+                initialValues={initialFormState}
                 validationSchema={VALIDATION}
                 onSubmit={(values) => {
                   console.log(values);
@@ -115,7 +115,7 @@ export const ContactForm = () => {
                         className={classes.textBackground}
                         name="message"
                         label="MESSAGE"
-                        multiline={true}
+                        multiline
                         minRows={4}
                       />
                     </Grid>
