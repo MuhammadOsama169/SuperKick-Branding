@@ -9,7 +9,6 @@ import {
   OuterContainer,
   ImageContainer,
   VisibleContainer,
-  Liink,
 } from './Styles/Footer.styled';
 
 export const Footer = () => {

@@ -3,7 +3,6 @@ import { Instagram } from '@styled-icons/boxicons-logos/Instagram';
 import { LinkedinSquare } from '@styled-icons/boxicons-logos/LinkedinSquare';
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube';
 import { Twitter } from '@styled-icons/boxicons-logos/Twitter';
-import { Link } from 'react-router-dom';
 
 export const InstagramIcon = styled(Instagram)`
   color: #fff;
