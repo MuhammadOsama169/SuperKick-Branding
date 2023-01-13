@@ -22,7 +22,7 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.   
 ## Demo 💻
 
-https://exquisite-licorice-315079.netlify.app/
+https://superkickbranding.netlify.app/
 
 
 ## 🛠 Skills
